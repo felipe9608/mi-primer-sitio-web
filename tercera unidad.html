@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+     <title>Unidad 3. Lenguaje de Presentacion</title>
+     <LINK REL="stylesheet" TYPE="text/css" HREF="estilo.css">
+     <meta charset="utf-8"/>
+     <meta name="Descripcion" content="Esta es mi primera pagina web"/>
+     <meta name="author" content="Felipe de Jesus Espinal Moreno"/>
+     <meta name="keywords" content="Programacion web"/>
+    </head>
+    <body style="background-color:#1dc70e;"></bodystyle>
+     <header>
+        <h2 align="center">Felipe De Jesus Espinal Moreno</h2>
+        <h3 align="center">UNIVERSIDAD CETEC</h3>
+        <h2 align="center">Unidad 3. LENGUAJE DE PRESENTACION</h1>
+        <time datetime="15-09-2020">Publicado 15-09-2020</time>
+     </header>
+    <nav>
+        <ul>
+         <li>Principal</li>
+         <li>Ayuda</li>
+         <li>Contacto</li>
+        </ul>
+    </nav>
+    <aside> <align="right">
+      <a href="cuarta unidad.html">Cuarta Unidad</a>
+    </aside>
+     <h2><center>INTRODUCCIÓN</center></h2>
+
+     <p align="left">El Lenguaje de presentación define un conjunto de etiquetas y atributos válidos y
+     que ofrecen un significado visual para cada elemento del lenguaje, sino que ofrece
+     un número de reglas sintácticas para poder crear documentos. Uno de los
+     lenguajes más comunes para presentar información web es HTML.
+     El marcado de presentación resulta más fácil de elaborar, sobre todo para
+     cantidades pequeñas de información. Sin embargo resulta complicado de
+     mantener o modificar, por lo que su uso se ha ido reduciendo en proyectos
+     grandes en favor de otros tipos de marcado más estructurados.
+     Se puede tratar de averiguar la estructura de un documento de esta clase
+     buscando pistas en el texto. Por ejemplo, el título puede ir precedido de varios
+     saltos de línea, y estar ubicado centrado en la página. Varios programas pueden
+     deducir la estructura del texto basándose en esta clase de datos, aunque el
+     resultado suele ser bastante</p>
+     <center><h2>RESUMEN UNIDAD 3</h2></center>
+     <p align="left">La nueva especificación HTML5, intenta regresar a la idea original en la cual
+     HTML se concentraba en el contenido. Las etiquetas que estaban dedicadas a dar
+     formato, posición o color en HTML han sido descontinuadas, así es, etiquetas
+     como &lt;center&gt;, &lt;font&gt; y &lt;b&gt;, entre otras, ya no están disponibles. Ahora se
+     dispone con un lenguaje oficial completamente dedicado a darle un buen aspecto
+     a sus páginas, el lenguaje es llamado CSS (Cascading Style Sheets).</p>
+     <p align="left">La especificación de HTML5 fue desarrollada considerando CSS a cargo del diseño.
+     Debido a esta consideración, la integración entre HTML y CSS es ahora vital para
+     el desarrollo web y esta es la razón por la que cada vez que mencionamos HTML5
+     también estamos haciendo referencia a CSS3, aunque oficialmente se trate de dos
+     tecnologías completamente separadas.</p>
+     <p align="left">La sintaxis para las declaraciones en CSS se definen mediante el nombre de un
+     atributo seguido por dos puntos y luego el valor de ese atributo. Se puede definir
+     un estilo a base de definir muchos atributos separados por punto y coma. El último
+     punto y coma de la lista de atributos es opcional.</p>
+     <p align="left">atributo1: valor; atributo2: valor;… atributoN: valor;</p>
+     <p align="left">Los estilos se pueden colocar directamente en las etiquetas de HTML5.
+     &lt;h1 style=&quot;color: red; text-align: center;&quot;&gt;Texto color rojo&lt;/h1&gt;
+     Este uso directo en CSS se llama estilo inline y no es recomendable porque se
+     mezcla con las etiquetas de HTML. En vez de utilizar este estilo, se recomienda
+     crear un estilo para un elemento en particular o para un conjunto de elementos, los
+     cuales se podrán reutilizar en otros elementos. Para esto se utilizan selectores. La
+     sintaxis es similar al estilo inline. Un estilo consiste en un selector seguido de sus
+     atributos y valores encerrados entre llaves.</p>
+
+     <p align="left">Selector {atributo1: valor; atributo2: valor;… atributoN: valor; }
+     Un ejemplo es el siguiente:</p>
+     <p align="left">h1 {color: red; text-align: center;”}</p>
+     <p align="left">Los atributos que se componen por más de una palabra, se les agrega un guion
+     para unir las palabras, por ejemplo: font-face, font-size, line-height, etc. Los
+     valores de estos atributos son de diferente forma, por ejemplo: palabras clave
+     como xx-small; palabras como Arial; números como 0, 1; números con unidad de
+     medición como 100px o 2 cm; y valores especiales como URLs url(../styles/fancy.css).</p>
+     <p align="left">CSS ignora los espacios en blanco. Entonces, los siguientes ejemplos significan lo
+     mismo.</p>
+     <center><img src="Captura1.jpg"></center>
+     <p align="left">En varios casos importantes como en las URL, nombres de fuentes, y en ciertos
+     selectores como id o class, se debe escribir correctamente las mayúsculas o
+     minúsculas. Cuando los estilos no se coloquen directamente inline, deben
+     colocarse dentro de la etiqueta style dentro del elemento head.</p>
+     <center><img src="Captura2.jpg"></center>
+     <p align="left">Si el estilo se va a agregar en un archivo externo, se debe referenciar con la
+     etiqueta link dentro del elemento head.</p> 
+     <center><img src="Captura3.jpg"></center>
+     <p align="left">El selector universal se utiliza para seleccionar todos los elementos de la página,
+     se indica mediante un asterisco (*). No se utiliza habitualmente, ya que es difícil
+     que un mismo estilo se pueda aplicar a todos los elementos de una página. El
+     siguiente ejemplo elimina el margen y el relleno de todos los elementos HTML</p>  
+     <center><img src="Captura4.jpg"></center>
+     <p algn="left">El selector de tipo o etiqueta selecciona todos los elementos de la página cuya
+     etiqueta HTML coincide con el valor del selector. Para utilizar este selector,
+     solamente es necesario indicar el nombre de una etiqueta HTML (sin los
+     caracteres &lt; y &gt;) correspondiente a los elementos que se quieren seleccionar. El
+     siguiente ejemplo aplica diferentes estilos a los titulares y a los párrafos de una
+     página HTML.</p>
+     <center><img src="Captura5.jpg"></center>
+     <p align="left">Si se quiere aplicar los mismos estilos a dos etiquetas diferentes, se pueden
+     encadenar los selectores, agrupar todas las reglas individuales en una sola regla
+     con un selector múltiple. Para ello, se incluyen todos los selectores separados por una coma (,).</p>
+     <center><img src="Captura6.jpg"></center>
+     <p align="left">En las hojas de estilo complejas, es habitual agrupar las propiedades comunes de
+     varios elementos en una única regla CSS y posteriormente definir las propiedades
+     específicas de esos mismos elementos. El siguiente ejemplo establece en primer
+     lugar las propiedades comunes de los títulos de sección (color y tipo de letra) y a
+     continuación, establece el tamaño de letra de cada uno de ellos.</p>
+     <center><img src="Captura7.jpg"></center>
+     <p align="left">Las clases nos sirven para crear definiciones de estilos que se pueden utilizar
+     repetidas veces. Una clase se puede definir entre las etiquetas &lt;style&gt; en la
+     cabecera del documento, o en un archivo externo a la página. Por ejemplo:</p>
+     <center><img src="Captura8.jpg"></center>
+     <p align="left">Una vez tenemos una clase, podemos utilizarla en cualquier etiqueta HTML. Para
+     ello utilizaremos el atributo class, poniéndole como valor el nombre de la clase, de esta forma:</p>
+     <center><img src="Captura9.jpg"></center>
+     <p align="left">El siguiente ejemplo utiliza las clases:</p>
+     <center><img src="Captura10.jpg"</center>
+     <p align="left">En ocasiones, es necesario aplicar estilos CSS a un único elemento de la página.
+     Aunque puede utilizarse un selector de clase para aplicar estilos a un único
+     elemento, existe otro selector más eficiente en este caso. El selector de ID permite
+     seleccionar un elemento de la página a través del valor de su atributo id. Este tipo
+     de selectores sólo seleccionan un elemento de la página porque el valor del
+     atributo id no se puede repetir en dos elementos diferentes de una misma página.
+     La sintaxis de los selectores de ID es muy parecida a la de los selectores de clase,
+     salvo que se utiliza el símbolo de la almohadilla (#) en vez del punto (.) como
+     prefijo del nombre de la regla CSS.</p>
+     <center><img src="Captura11.jpg"></center>
+     <p align="left">En el ejemplo anterior, el selector #destacado solamente selecciona el segundo
+     párrafo (cuyo atributo id es igual a destacado). La principal diferencia entre este
+     tipo de selector y el selector de clase tiene que ver con HTML y no con CSS, la
+     recomendación general es la de utilizar el selector de ID cuando se quiere aplicar
+     un estilo a un solo elemento específico de la página y utilizar el selector de clase
+     cuando se quiere aplicar un estilo a varios elementos diferentes de la página HTML.</p>
+     <p align="left">Estilo en los enlaces</p>
+     <p align="left">Una técnica muy habitual, que se puede realizar utilizando las hojas de estilo en
+     cascada y no se podía en HTML, es la definición de estilos en los enlaces,
+     quitándoles el subrayado o hacer enlaces en la misma página con distintos
+     colores.</p>
+     <p align="left">Para aplicar estilo a los enlaces debemos definirlos para los distintos tipos de
+     enlaces que existen (visitados, activos...). Utilizaremos la siguiente sintaxis, en la
+     declaración de estilos global de la página (&lt;STYLE&gt;) o del sitio (Definición en un
+     archivo externo):</p>
+     <p align="left">Enlaces normales A: link {atributos}</p>
+     <p align="left">Enlaces visitados A: visited {atributos}</p>
+     <p align="left">Enlaces activos, los cuales son los enlaces están activos en el preciso
+     momento en que se pincha sobre ellos A:active {atributos}</p>
+     <p align="left">Enlaces hover, cuando el ratón está encima de ellos A:hover {atributos}
+     El atributo para definir enlaces sin subrayado es text-decoration:none, y para
+     darles color es color:tu_color. También podemos definir el estilo de cada enlace en
+     la propia etiqueta &lt;A&gt;, con el atributo style. Ejemplo de estilos en enlaces.</p>
+     <center><img src="Captura12.jpg"></center>
+     <p align="left">Hay algunos selectores más que fueron agregados o que ahora son considerados
+     parte de CSS3 y pueden ser útiles para nuestros diseños. Estos selectores usan
+     los símbolos &gt;, + y ~ para especificar la relación entre elementos.</p>
+     <center><img src="Captura13.jpg"></center>
+     <p align="left">El selector &gt; está indicando que el elemento a ser afectado por la regla es el
+     elemento de la derecha cuando tiene al de la izquierda como su padre. El estilo
+     modifica los elementos &lt;p&gt; que son hijos de un elemento &lt;div&gt;. En este caso,
+     fuimos bien específicos y referenciamos solamente el elemento &lt;p&gt; con el valor
+     mitexto2 en su atributo class.
+     <p align="left">El próximo ejemplo construye un selector utilizando el símbolo +. Este selector
+     referencia al elemento de la derecha cuando es inmediatamente precedido por el
+     de la izquierda. Ambos elementos deben compartir el mismo padre:</p>
+     <center><img src="Captura14.jpg"></center>
+     <p align="Left">El estilo afecta al elemento &lt;p&gt; que se encuentra ubicado luego de otro elemento
+     &lt;p&gt; identificado con el valor mitexto2 en su atributo class. El texto en el tercer
+     elemento &lt;p&gt; aparecerá en la pantalla en color rojo debido a que este elemento
+     &lt;p&gt; en particular está posicionado inmediatamente después del elemento &lt;p&gt;
+     identificado con el valor mitexto2 en su atributo class.</p>
+     <p align="left">El selector ~ es similar al anterior pero el elemento afectado no necesita estar
+     precediendo de inmediato al elemento de la izquierda (Powell, 2010). Además, más de un elemento puede ser afectado:</p>
+     <center><img src="Captura15.jpg"></center>
+     <p align="left">El estilo será aplicado a todos los elementos &lt;p&gt; que son hermanos y se
+     encuentran luego del elemento &lt;p&gt; identificado con el valor mitexto2 en su atributo class.</p>
+     <center><h2>Tipos de medios</h2></center>
+     <p align="left">Los tipos de medios de CSS nos permiten decidir la apariencia de una página,
+     dependiendo del tipo de medios que se utilicen para mostrar la página. El más
+     común para una página Web es el tipo de medios screen, que es una pantalla de
+     computadora estándar. Los otros tipos de medios en CSS son: handheld, braille,
+     speech y print. El medio handheld está diseñado para dispositivos móviles de
+     Internet como los Smartphones, mientras que braille es para las máquinas que
+     pueden leer o imprimir páginas web en braille. El estilo speech nos permite ofrecer
+     a un navegador Web con síntesis de voz más información sobre el contenido de
+     una página. El tipo de medias printafecta la apariencia de una página web cuando se imprime.</p>
+     <p align="left">l siguiente código proporciona un ejemplo simple y clásico en el que se aplica un
+     conjunto de estilos cuando vemos el documento en todos los medios (incluyendo
+     pantallas) excepto la impresora, y otro al momento de imprimir el documento. Para
+     ver la diferencia, examine las capturas de pantalla debajo del párrafo.</p>
+     <center><img src="Captura16.jpg"></center>
+     <center><img src="Captura17.jpg"></center>
+     <p align="center">Figura Tipos de medios de CSS</p>
+     <p align="left">Modelo de caja</p>
+     <p align="left">Con respecto a la estructura, básicamente cada navegador ordena los elementos
+     por defecto de acuerdo a su tipo: block (bloque) o inline (en línea). Esta
+     clasificación está asociada con la forma en que los elementos son mostrados en pantalla.</p>
+     <p align="left">*Elementos block son posicionados uno sobre otro hacia abajo en la página.
+     *Elementos inline son posicionados lado a lado, uno al lado del otro en la misma línea, sin ningún salto de línea a menos que ya no haya más
+     espacio horizontal para ubicarlos.</p>
+     <p align="left">asi todos los elementos estructurales en nuestros documentos serán tratados por
+     los navegadores como elementos block por defecto. Esto significa que cada
+     elemento HTML que representa una parte de la organización visual (por ejemplo,
+     &lt;section&gt;, &lt;nav&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;div&gt;) será posicionado debajo del anterior.
+     Cada bloque (block) se muestra por defecto tan ancho como sea posible, tan alto
+     como la información que contiene y uno sobre otro. La Figura siguiente muestra
+     una representación visual de esta situación:</p>
+     <center><img src="Captura18.jpg"></center>
+     <p align="left">Para aprender cómo podemos crear nuestra propia organización de los elementos
+     en pantalla; debemos primero entender cómo los navegadores procesan el código HTML.</p>
+     <p align="left">Los navegadores consideran cada elemento HTML como una caja. Una página
+     web es en realidad un grupo de cajas ordenadas siguiendo ciertas reglas. Estas
+     reglas son establecidas por estilos provistos por los navegadores o por los
+     diseñadores usando CSS. CSS tiene un set predeterminado de propiedades
+     destinados a sobrescribir los estilos provistos por navegadores y obtener la
+     organización deseada. Estas propiedades no son específicas, tienen que ser
+     combinadas para formar reglas que luego serán usadas para agrupar cajas y
+     obtener la correcta disposición en pantalla. La combinación de estas reglas es
+     normalmente llamada modelo o sistema de disposición. Todas estas reglas
+     aplicadas juntas constituyen lo que se llama un modelo de caja.</p>
+     <p align="left">Existe solo un modelo de caja que es considerado estándar estos días, y muchos
+     otros que aún se encuentran en estado experimental. El modelo válido y
+     ampliamente adoptado es el llamado Modelo de Caja Tradicional, el cual ha sido
+     usado desde la primera versión de CSS. Aunque este modelo ha probado ser
+     efectivo, algunos modelos experimentales intentan superar sus deficiencias, pero
+     la falta de consenso sobre el reemplazo más adecuado aún mantiene a este viejo
+     modelo en vigencia y la mayoría de los sitios webs programados en HTML5 lo continúan utilizando.</p>
+     <p align="left">Las cajas eran creadas expandiendo celdas y combinando filas de celdas,
+     columnas de celdas y tablas enteras, unas sobre otras o incluso anidadas. Cuando
+     los sitios webs crecieron y se volvieron más y más complejos esta práctica
+     comenzó a presentar serios problemas relacionados con el tamaño y el
+     mantenimiento del código necesario para crearlos.</p>
+     <p align="left">Estos problemas iniciales hicieron necesario lo que ahora vemos como una
+     práctica natural: la división entre estructura y presentación. Usando etiquetas
+     &lt;div&gt; y estilos CSS fue posible reemplazar la función de tablas y efectivamente
+     separar la estructura HTML de la presentación. Con elementos &lt;div&gt; y CSS
+     podemos crear cajas en la pantalla, posicionar estas cajas a un lado o a otro y
+     darles un tamaño, color o borde específico entre otras características. CSS provee
+     propiedades específicas que nos permiten organizar las cajas de acuerdo a
+     nuestros deseos. Estas propiedades son lo suficientemente poderosas como para
+     crear un modelo de caja que se transformó en lo que hoy conocemos como Modelo de Caja Tradicional.</p>
+     <p align="left">Algunas deficiencias en este modelo mantuvieron a las tablas vivas por algún
+     tiempo, pero los principales desarrolladores, influenciados por el suceso de las
+     implementaciones Ajax y una cantidad enorme de nuevas aplicaciones
+     interactivas, gradualmente volvieron a las etiquetas &lt;div&gt; y estilos CSS en un
+     estándar. Finalmente, el Modelo de Caja Tradicional fue adoptado a gran escala.</p>
+     <p align="left">La Figura siguiente muestra un código HTML5 listo para estilos CSS3.</p>
+     <center><img src="Captura19.jpg"></center>
+     <p align="left">El código tiene varias etiquetas fueron identificadas con los atributos id y class.
+     Esto significa que podemos referenciar un elemento específico desde las reglas
+     CSS con el valor de su atributo id o podemos modificar varios elementos al mismo
+     tiempo usando el valor de su atributo class. Contiene un elemento &lt;div&gt;
+     identificado con el atributo y el valor id=”agrupar”, y se cierra al final del cuerpo
+     con la etiqueta de cierre &lt;/div&gt;. Este elemento se encarga de agrupar todos los
+     demás elementos permitiéndonos aplicar el modelo de caja al cuerpo.</p>
+     <center><img src="Captura20.jpg"></center>
+     <p align="left">El estilo está referenciando por primera vez un elemento a través del valor de su
+     atributo id. El carácter # le está diciendo al navegador que el elemento afectado
+     por este conjunto de estilos tiene el atributo id con el valor agrupar. Esta regla
+     provee tres estilos para la caja principal. El primer estilo establece un valor fijo de
+     1200 pixeles. Esta caja tendrá siempre un ancho de 1200 pixeles, lo que
+     representa un valor común para un sitio web estos días. Sin embargo, estos
+     parámetros cambian constantemente a través del tiempo, por supuesto.</p>
+     <p align="left">El segundo estilo es parte de lo que llamamos el Modelo de Caja Tradicional. En
+     body se especifica que el contenido del cuerpo será centrado horizontalmente con
+     el estilo text-align: center. Pero esto solo afecta contenido inline, como textos o
+     imágenes. Para elementos block, como un &lt;div&gt;, necesitamos establecer un valor
+     específico para sus márgenes que los adapta automáticamente al tamaño de su
+     elemento padre. La propiedad margin usada para este propósito puede tener
+     cuatro valores: superior, derecho, inferior, izquierdo, en este orden. Esto significa
+     que el primer valor declarado en el estilo representa el margen de la parte superior
+     del elemento, el segundo es el margen de la derecha, y así sucesivamente. Sin
+     embargo, si solo escribimos los primeros dos parámetros, el resto tomará los mismos valores.</p>
+     <p align="left">El estilo margin: 15px auto asigna 15 pixeles al margen superior e inferior del
+     elemento &lt;div&gt; que está afectando y declara como automático el tamaño de los
+     márgenes de izquierda y derecha, los dos valores declarados son usados para
+     definir los cuatro márgenes. De esta manera, habremos generado un espacio de
+     15 pixeles en la parte superior e inferior del cuerpo y los espacios a los laterales
+     (margen izquierdo y derecho) serán calculados automáticamente de acuerdo al
+     tamaño del cuerpo del documento y el elemento &lt;div&gt;, efectivamente centrando el
+     contenido en pantalla.</p>
+     <p align="left">Aplicación en documento web</p>
+     <p align="left">El funcionamiento de las hojas de estilo o CSS consiste en definir, mediante cierta
+     sintaxis, la apariencia y presentación de nuestras páginas a diferentes niveles:</p>
+     <p align="left">• A nivel local. Una etiqueta en concreto, llegando incluso a poder definir varios
+     estilos diferentes para una sola etiqueta. Esto es muy importante, ya que ofrece
+     potencia en nuestra programación, se puede definir, por ejemplo, varios tipos de
+     párrafos: en rojo, en azul, con márgenes, sin ellos.</p>
+     <p align="left">• A nivel de página usando la cabecera. En un documento HTML o página, se
+     puede definir la forma, en un pequeño trozo de código en la cabecera, a toda la página.</p>
+     <p align="left">• A nivel de archivos externos. Los estilos pueden especificarse desde un archivo
+     separado, y referenciados desde cualquier página, esto proporciona la posibilidad
+     de definir la forma de todo un sitio de una sola vez.</p>
+     <p align="left">Utilizar estilos a nivel local</p>
+     <p align="left">El uso de CSS permite hacer que sólo cierta parte de una página muestre un estilo
+     determinado, esto se logra utilizando a dicho estilo en alguna determinada
+     etiqueta. Por ejemplo, se puede definir un párrafo entero en color rojo y otro en
+     color azul. Para ello se maneja el atributo “style”, que es soportado por la mayoría
+     de las etiquetas del HTML). Considere la página siguiente que se muestra en la
+     siguiente Figura:</p>
+     <center><img src="captura21.jpg"></center>
+     <p align="left">A continuación, se detalla el código de la página mostrada en la ¡Error! No se
+     encuentra el origen de la referencia:</p>
+     <center><img src="Captura22.jpg"></center>
+     <p align="left">Se puede usar esta técnica para afectar una determinada etiqueta, pero no es lo
+     más conveniente, ya que el abuso podría llevarlo a tener que hacer un
+     mantenimiento demasiado laborioso, es decir, si deseara modificar el estilo de sus
+     etiquetas tendría que hacerlo una por una, en cada archivo html donde se
+     encuentren, y esto es justo lo que CSS trata de evitar. Sin embargo, la técnica
+     puede ser útil en situaciones particulares.</p>
+     <p align="left">Utilizar estilos a nivel documento</p>
+     <p align="left">Podemos definir estilos en la sección de la etiqueta &lt;head&gt; de un documento.
+     Estos estilos se pueden aplicar a toda la página. Es una manera muy cómoda y
+     potente de darle forma a un documento, ya que estos estilos serán aplicados en
+     toda la página y nos ahorrará la necesidad de aplicar estilo individual a muchas
+     etiquetas HTML para afectar a todo el documento. Si desea cambiar los estilos de
+     la página, se hará de una sola vez en la cabecera de la misma, sin tocar en lo
+     absoluto a las etiquetas HTML. El siguiente es un ejemplo de cómo se utiliza CSS
+     en el ámbito de &lt;head&gt; y &lt;/head&gt;.</p>
+     <p align="left">El primer elemento que se debe agregar para incluir estilos que afecten todo un
+     documento en la cabecera es la etiqueta con cierre &lt;style&gt; dentro del ámbito de
+     &lt;head&gt;, en &lt;style&gt; se colocarán los diferentes estilos que desee. Los estilos se
+     definirán indicando a qué etiqueta desea agregar alguno y enseguida se especifica
+     las reglas de ese estilo entre los símbolos de llave ({}). La Figura siguiente
+     muestra un ejemplo:</p>
+     <center><img src="Captura23.jpg"></center>
+     <p align="left">El código para la página que se muestra en la ¡Error! No se encuentra el origen de</p>
+     <center><img src="Captura24.jpg"></center>
+     <p align="left">la referencia.es el siguiente:</p>
+     <center><img src="Captura25.jpg"></center>
+     <p aling="left">En este ejemplo ambos párrafos existentes usan el mismo estilo especificado una
+     sola vez en la cabecera de la página y no fue necesario tocar en ningún momento
+     el código HTML dentro de la sección &lt;body&gt;.</p>
+     <p align="left">Utilizar estilos a nivel de sitio (link)</p>
+     <p align="left">Una de las características más potentes de la programación con hojas de estilos
+     consiste en poder definir y cambiar los estilos para todo un sitio web de una sola
+     vez. Esto se consigue creando un archivo donde únicamente se coloca las
+     declaraciones de estilos de la página y enseguida enlace todas las páginas que
+     componen un sitio con ese archivo. De esta forma, todas las páginas comparten 
+     una misma declaración de estilos y, por lo tanto, si cambia algo en esa
+     declaración, también cambiarán todas las páginas.</p>
+     <p align="left">Con las ventajas añadidas de que se ahorra en líneas de código HTML, lo que
+     reduce el peso del documento, y se evita la molestia de definir una y otra vez los
+     estilos con el HTML. ¡Error! No se encuentra el origen de la referencia. Muestra un
+     ejemplo de una página web.</p>
+     <center><img src="Captura26.jpg"</center>
+     <p align="left">Ponga especial atención en el código de esta página; el elemento &lt;style&gt; no
+     existe, ni absolutamente ningún código CSS.</p>
+     <center><img src="Captura27.jpg"></center>
+     <p align?"left">Esta página es muy similar a la del ejemplo anterior. La diferencia interesante es
+     que claramente tiene un estilo, pero la información no está directamente escrita en
+     la página, en su lugar se utiliza la etiqueta vacía &lt;link&gt;. La etiqueta vacía &lt;link&gt;
+     dentro de la sección &lt;header&gt; permite asociar otro archivo con la página actual,
+     su uso más común es precisamente para incluir estilos. Los atributos utilizados
+     cuando se usan hojas de estilo son los siguientes:</p>
+     <p align="left">• Atributo href. Especifica la dirección URL del archivo que se desea vincular.</p>
+     <p align="left">• Atributo rel. Indica la naturaleza de relación entre el documento actual y el
+     archivo vinculado por la URL. Cuando el archivo vinculado contiene cascadas de
+     estilo, el valor es stylesheet.</p>
+     <p align="left">• Atributo type. Especifica el tipo MIME del archivo vinculado, para las hojas de
+     estilo el valor es text/css.</p>
+     <p align="left">El estilo en un archivo externo puede usarse una y otra vez en múltiples páginas, y
+     éstas reflejarán cualquier cambio en la hoja de estilos. El archivo que contiene los
+     estilos tiene extensión .css y puede modificarse con cualquier editor de texto
+     plano, el código no requiere de la etiqueta &lt;style&gt;. Aquí el código CSS del archivo
+     que se utiliza en el ejemplo:</p>
+     <center><img src="Captura28.jpg"></center>
+     <p align="left">Utilizar clases y el identificador (class e id)</p>
+     <p align="left">Hay ejemplos donde se añade un estilo a algunas etiquetas en particular, o le
+     fueron asignados estilos a la etiqueta &lt;p&gt;. Pero ¿qué pasaría si quisiera seguir
+     afectando a los párrafos de la misma manera, excepto a uno o a dos? La Figura
+     siguiente muestra un ejemplo de página web.</p>
+     <center><img src="Captura29.jpg"></center>
+     <p align="left">Para resolver las preguntas se cuenta con los atributos id y class que permiten
+     aplicar estilos a una etiqueta en particular o a un grupo de ellas. El código HTML y
+     CSS de la página que se muestra ¡Error! No se encuentra el origen de la
+     referencia es:</p>
+     <center><img src="Captura30.jpg"></center>
+     <p align="left">El atributo “id” sirve para dar un identificador único a una etiqueta HTML. En este
+     caso se usa id=&quot;elegante&quot; para el primer párrafo, el cual tiene su propio estilo
+     dedicado. Después en el tercer y quinto párrafos se utiliza el atributo
+     class=&quot;blancas&quot;, en este caso ambos párrafos comparten el mismo estilo.
+     Finalmente, los dos párrafos restantes hacen uso del estilo general indicado para
+     los párrafos. El código siguiente corresponde al archivo vinculado con el ejemplo
+     estiloExterno02.css.</p>
+     <center><img src="Captura31.jpg"></center>
+     <p align="left">Después de observar el código HTML y su correspondiente CSS, es posible
+     afirmar que lo que se ha agregado son algunos indicadores para distinguir entre
+     tres tipos de párrafos:</p>
+     <p align="left"> Párrafos comunes. Estos párrafos no requieren ninguna característica
+     especial. Una vez vinculado el estilo, el código de estos párrafos queda intacto.</p>
+     <p align="left"> Párrafos identificados. Estos párrafos usan el atributo id con un valor único.</p>
+     <p align="left">Este atributo está disponible para prácticamente todas las etiquetas HTML, de
+     manera que, en este ejemplo, el estilo puede hacer referencia a un elemento en
+     particular gracias a su valor en id.</p>
+     <p align="left"> Párrafos dentro de una clase. Para dar aún mayor flexibilidad se puede
+     asignar valor al atributo “class” y a cualquier elemento HTML. Esta
+     propiedad permite indicar que el elemento HTML que la utiliza es miembro
+     de ella. A diferencia del atributo “id” se puede tener tantos elementos como
+     se desee utilizando la misma clase. El estilo por supuesto afecta a todos los
+     miembros de una misma clase.</p>
+     <p align="left">Para hacer uso de un id como referencia en la hoja de estilos, debe anteponer el
+     signo “#” al nombre del valor, como se hace en el ejemplo con el id con valor
+     elegante. Utilice el carácter punto (.) antes del nombre de la clase para hacer
+     referencia al valor del atributo “class”.</p>
+     <p align="left"> Utilice el nombre de la etiqueta HTML cuando desee afectar todos los
+     elementos de ese tipo.</p>
+     <p align="left"> Use el atributo “class” cuando quiera afectar sólo a un grupo de elementos
+     que son o no del mismo tipo.</p>
+     <p align="left"> Use el atributo id cuando quiera afectar a un elemento individualmente.</p>
+     <p align="left">Manipular la apariencia de una página</p>
+     <p align="left">Con las hojas de estilo es posible utilizar colores, modificar el formato de un texto,
+     añadir y manejar bordes de diferentes elementos, usar imágenes como fondos y
+     manejar la estructura y posición visual de una página.</p>
+     <p align="left">Manipular texto</p>
+     <p align="left">La CSS ofrece muchas características para manipular la apariencia del texto de
+     los documentos. Las siguientes son algunas de las propiedades clásicas utilizadas en CSS:</p>
+     <p align="left"> Propiedad color. Especifica el color del texto.</p>
+     <p align="left"> Propiedad letter-spacing. Incrementa o decrementa la distancia entre los
+     caracteres de un texto.</p>
+     <p align="left"> Propiedad text-align. Especifica la alineación horizontal de un texto</p>
+     <p align="left"> Propiedad text-decoration. Indica la decoración de un texto. Los valores
+     más utilizados son none, underline, overline y linethrough.</p>
+     <p align="left"> Propiedad vertical-align. Especifica la alineación vertical de un texto.</p>
+     <p align="left">Manipular colores</p>
+     <p align="left">Los colores se han manipulado utilizando el nombre del color en inglés como
+     orange, green, etc. A veces se requiere tener una variedad más amplia de colores,
+     pero CSS sólo cuenta con 147 colores diferentes si se hace de esta manera. CSS
+     utiliza la notación hexadecimal para elegir los colores.</p>
+     <p align="left">Manipular Bordes</p>
+     <p align="left">Para dar estilo a un borde se emplean las propiedades disponibles en CSS, las
+     más utilizadas son:</p>
+     <p align="left"> Propiedad border. Permite especificar todas las propiedades de un borde
+     en una sola declaración. Propiedad border-color. Especifica el color de un
+     borde por sus cuatro lados.</p>
+     <p align="left"> Propiedad border-style. Especifica el estilo de un borde por sus cuatro
+     lados.</p>
+     <p align="left"> Propiedad border-width. Especifica el grueso del borde por sus cuatro
+     lados</p>
+     <center><h2>CONCLUSIONES</h2></center>
+     <p align="left">Este trabajo me permitió conocer e identificar los fundamentos del lenguaje de
+     presentación CSS3 mediante la aplicación de sus elementos para desarrollar
+     aplicaciones web que sigan los estándares vigentes.
+     Que es la forma como indicamos el diseño, colores, tamaño, etc., de un sitio web,
+     separado de la programación y la estructura de este.
+     La idea que se encuentra detrás de su desarrollo es separar la estructura de un
+     documento de su presentación, en este caso es el código de HTML ya sea dentro
+     o fuera del cuerpo.</p>
+     <center><h2>BIBLIOGRAFÍA</h2></center>
+     <p align="left">Ingeniería en Sistemas Computacionales
+     Guía De Sistemas Operativos Universidad Tutorial CETEC. Unidad 3.</p>
+     <center><footer>
+        Derechos Reservados 2020-2021
+     </footer></center>    
+
+    </body>
+</html>

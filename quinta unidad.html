@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <title>PROGRAMACIÓN DEL LADO DEL CLIENTE Y DEL LADO DEL SERVIDOR</title>
+   <LINK REL="stylesheet" TYPE="text/css" HREF="estilo.css"> 
+     <meta charset="utf-8"/>
+     <meta name="Descripcion" content="Esta es mi primera pagina web"/>
+     <meta name="author" content="Felipe de Jesus Espinal Moreno"/>
+     <meta name="keywords" content="PROGRAMACIÓN DEL LADO DEL CLIENTE Y DEL LADO DEL SERVIDOR"/>
+</head>
+<body  style="background-color:#0bffff;"></bodystyle>
+    <header>
+        <h2 align="center">Felipe De Jesus Espinal Moreno</h2>
+        <h3 align="center">UNIVERSIDAD CETEC</h3>
+        <h2 align="center">Unidad 5. PROGRAMACIÓN DEL LADO DEL CLIENTE Y DEL LADO DEL SERVIDOR</h1>
+        <time datetime="15-09-2020">Publicado 15-09-2020</time>
+     </header>
+    <nav>
+        <ul>
+         <li>Principal</li>
+         <li>Ayuda</li>
+         <li>Contacto</li>
+        </ul>
+    </nav>
+   
+<p><center>INTRODUCCIÓN</center></p>
+<p align="left">El presente resumen de la Unidad 5 trata sobre cómo funciona la web funciona: los servidores web albergan los contenidos y los clientes los solicitan por HTTP o FTP, entendiendo por clientes a los navegadores (Mozilla Firefox o Google Chrome) instalados en el sistema del usuario, donde se ejecutan. Por el contrario, los servidores web, como Apache o NGINX, forman parte de los proyectos de desarrollo web, se instalan y se ejecutan en este entorno y permiten a los clientes el acceso a los contenidos.</p>
+<p align="left">Los contenidos estáticos, como los clásicos elementos de HTML o las imágenes, sencillamente se envían al navegador y allí se visualizan, los contenidos dinámicos, como una Wiki, un menú desplegable o cualquier tipo de aplicación web solo funcionan por medio de scripts, los cuales se han de ejecutar e interpretar con el lenguaje de programación web correspondiente en el lado del servidor o en el lado del cliente. Es por esto que se diferencia fundamentalmente entre los lenguajes de programación del lado servidor y los lenguajes del lado cliente.</p>
+<p align="left">La programación del lado del servidor entra en juego en el desarrollo de páginas web con elementos dinámicos y de aplicaciones web. Esta tecnología de desarrollo web se basa en la utilización de scripts que ejecuta el servidor web, con ayuda del lenguaje de programación adecuado, cuando un cliente solicita el contenido.</p>
+<p align="left">Los lenguajes de programación del lado cliente también se utilizan para realizar proyectos con contenidos dinámicos, pero, a diferencia de los lenguajes del lado servidor, no es el servidor el que ejecuta y procesa los scripts, sino el cliente solicitante.</p>
+<p><center>DESARROLLO</center></p>
+<p align="left">Los lenguajes de programación del lado cliente se usan para su integración en páginas web. Un código escrito en un lenguaje de script se incorpora directamente dentro de un código HTML y se ejecuta interpretado, no compilado.</p>
+<p align="left">Con la programación del lado del cliente se pueden validar algunos de los datos en la máquina cliente antes de enviarlos al servidor. Esto proporciona a los usuarios informes de error inmediatos, mientras siguen en esa página de formulario y sin necesidad de volver atrás tras recibir un mensaje de error. Puede resultar necesario acceder a una base de datos para validar determinados valores, mientras que no suele disponer de un acceso directo a la base de datos en la máquina del cliente, aunque ese acceso a la base de datos es factible.</p>
+<p align="left">Para incorporar un fragmento de código script en una página HTML se introduce el script entre los tags <script> y </script>. Existen dos lenguajes script en la actualidad: el VBScript (derivado de Visual Basic) y el JavaScript (derivado de Java).</p>
+<p align="left"><strong>Elementos de programación del lado del cliente Vbscript (Visual Basic Script)</strong></p>
+<p align="left>Es un lenguaje de script, directamente derivado de Visual Basic. Para insertar código VBScript en una página HTML se añade al tag <script> el parámetro language= “VBScript”, que determina cuál de los lenguajes de script se utiliza.</p>
+<p align="left">Se dice que los lenguajes de script se ejecutan interpretados, no compilados. Esto significa que un código escrito en un lenguaje de script no sufre ninguna transformación previa a su ejecución. </p>
+<p align="left">Cada línea de código es traducida a lenguaje máquina justo antes de su ejecución. Después es ejecutada y la traducción no se conserva en ningún sistema de almacenamiento. Si es necesaria otra ejecución, el intérprete se verá abocado a realizar una nueva traducción de cada línea de código.</p>
+<p align="left">El lenguaje Visual Basic es compilado ya que sufre un proceso global de traducción a lenguaje máquina. Todo el código es traducido de una sola vez y el resultado de esa traducción se almacena en el disco con la extensión .exe. Cuando llega el momento de la ejecución, se ejecuta el código compilado, no el código original del programa, llamado código nativo o código fuente.</p>
+<p align="left">Las ventajas e inconvenientes de la interpretación son:</p>
+<p align="left">•Es cómodo para depurar, ya que no es necesario volver a compilar tras un cambio.</p>
+<p align="left">•No es necesario disponer de un compilador, ya que el intérprete (que forma parte del navegador) ejecuta el script.</p>
+<p align="left">•El mantenimiento es fácil y rápido, por parte del autor o de otro programador. </p>
+<p align="left">•La ejecución se ralentiza, al ser necesaria la interpretación línea a línea cada vez.</p>
+<p align="left">•Es visible y puede ser objeto de plagio por parte de otras personas.</p>
+<p align="left">•El usuario tiene acceso al código y puede modificarlo, estropeando alguna operación.</p>
+<p align="left">Las ventajas e inconvenientes de la compilación son:</p>
+<p align="left">•Se ejecuta muy rápido, al no ser necesaria una traducción cada vez.</p>
+<p align="left">•No puede ser “abierto” por otras personas. No es necesario transmitir el código fuente.</p>
+<p align="left">•Puede estar, íntegramente, incluido en un solo fichero.</p>
+<p align="left">•Es necesario disponer de un compilador-linkador para el proceso de la compilación.</p>
+<p align="left">•Ocupar bastante en disco, ya que incorpora en el propio código algunas librerías del sistema.*</p>
+<p align="left">•Depurar un programa implica volver a compilar tras los cambios.</p>
+<p align="left">Puede, además, estar diseñado para su ejecución en el lado del cliente o en el del servidor. La diferencia es que un código que se ejecuta en el lado del servidor no es visible en el lado del cliente. Este recibe los resultados, pero no el código.</p>
+<p align="left">El código que se debe de ejecutar en el lado del servidor estará incluido en la página web correspondiente entre los tags <% y %>. Además, habrá que renombrar la página para aplicarle la extensión .asp (Active Server Page. página activa en servidor). Un ejemplo de una página web sencilla que incluye código VBScript: </p>
+<center><img src="b1.jpg"></center>
+<p align="left">JavaScript es un lenguaje de scripts compacto basado en objetos (y no orientado a objetos). Se ejecuta sobre 16 plataformas diferentes, incluyendo los entornos de Microsoft.</p>
+<p align="left">Las diferentes versiones de JavaScript han sido finalmente integradas en un estándar denominado ECMAScript-262. Dicho estándar ha sido realizado por la organización ECMA dedicada a la estandarización de información y sistemas de comunicación. Las versiones actuales de los navegadores soportan este estándar.</p>
+<p align="left">JavaScript permite la realización de aplicaciones de propósito general a través de la Web y aunque no está diseñado para el desarrollo de grandes aplicaciones es suficiente para la implementación de aplicaciones web completas o interfaces web hacia otras más complejas.</p>
+<p align="left">Por ejemplo, una aplicación escrita en JavaScript puede ser incrustada en un documento HTML proporcionando un mecanismo para la detección y tratamiento de eventos, como clics del ratón o validación de entradas realizadas en formularios. Sin existir comunicación a través de la red una página HTML con JavaScript incrustado puede interpretar, y alertar al usuario con una ventana de diálogo, de que las entradas de los formularios no son válidas. O bien realizar algún tipo de acción como ejecutar un fichero de sonido, un applet de Java, etc.</p>
+<center><img src="b2.jpg"></center>
+<p align="left">Este primer programa se limita a escribir en pantalla un determinado texto para lo que se emplea el código document.write que es un objeto creado por el sistema que hace referencia al propio documento y write es uno de los métodos que proporciona para interactuar con él. El resultado de cargar este documento en un visualizador que interprete JavaScript será la aparición de los dos textos, el escrito en JavaScript y el escrito en HTML, sin que el usuario sea consciente del proceso. Se puede  hablar también de páginas dinámicas del servidor, que son reconocidas, interpretadas y ejecutadas por el propio servidor.</p>
+<p align="left"><strong>Manipulación de objetos del lado del cliente</strong></p>
+<p align="left">JavaScript es un lenguaje interpretado que posee una característica que lo hace especialmente idóneo para trabajar en Web, ya que son los navegadores que se utilizan para viajar por el a los que interpretan y por tanto ejecutan los programas escritos en JavaScript. De esta forma, se pueden enviar documentos a través de la Web que incorporan el código fuente de un programa, convirtiéndose de esta forma en documentos dinámicos, y dejando de ser simples fuentes de información estáticas.</p>
+<p align="left">Los programas se ejecutan en el navegador del cliente, sin necesidad de que intervenga el servidor. Una sola transacción basta para cargar la página en la que se encuentra tanto el formulario, para los datos de entrada, como el programa en JavaScript que proporciona los resultados.</p>
+<p align="left">Las dos principales características de JavaScript son, por un lado, que es un lenguaje basado en objetos y por otro que es un lenguaje orientado a eventos, debido al tipo de entornos en los que se utiliza. Por lo que gran parte se centra en describir objetos y escribir funciones que respondan a movimientos del ratón, pulsación de teclas, apertura y cerrado de ventanas o carga de una página, entre otros eventos.</p>
+<p align="left">No permite un control absoluto sobre los recursos de la computadora. Cada programa en JavaScript solo tiene acceso al documento HTML en el que va inmerso y, si acaso, a las ventanas en las que se ejecuta el navegador dentro del cual se está ejecutando el programa en JavaScript.</p>
+<p align="left">Elementos básicos de JavaScript</p>
+<p align="left">Variables. No es necesario declarar una variable, pero cuando se hace es por medio de la palabra reservada var. Una variable, cuando no es declarada, tiene siempre ámbito global, mientras que en caso contrario será de ámbito global si está definida fuera de una función, y local si está definida dentro:</p>
+<center><img src="b3.jpg"></center>
+<p align="left">Se pueden declarar varias variables en una misma sentencia separándolos por comas:</p>
+<center><img src="b4.jpg"></center>
+<p align="left">El tipo de datos de la variable será aquel que tenga el valor que asignemos a la misma, en este caso el tipo de dato sería entero:</p>
+<center><img src="b5.jpg"></center>
+<p align="left">Operadores. Existen varios tipos de operadores en JavaScript:</p>
+<p align="left">1. Asignación: Se utiliza para asignar valores a las variables. En el siguiente ejemplo se asigna a la variable “resultado” el valor 50.</p>
+<center><img src="b6.jpg"></center>
+<p align="left">2. Comparación: Se pueden comparar variables de distinto tipo, pues es capaz de forzar conversiones:</p>
+<p align="left">== Devuelve true si son iguales. Forzar conversiones de tipo.</p>
+<p align="left">!= Devuelve true si son distintos. Fuerza conversiones de tipo.</p>
+<p align="left">=== Devuelve true si son iguales y del mismo tipo.</p>
+<p align="left">!== Devuelve true si son distintos o de distinto tipo</p>
+<p align="left"> >Devuelve true si la variable de la izquierda es mayor que la variable de la derecha.</p>
+<p align="left"> < Devuelve true si la variable de la derecha es mayor que la variable de la izquierda.</p>
+<p align="left"> >= Devuelve true si la variable de la izquierda es mayor o igual que la variable de la derecha.</p>
+<p align="left"> <= Devuelve true si la variable de la izquierda es menor o igual que la variable de la derecha.</p>
+<p align="left">3. Aritméticos: A partir de varios operandos, devuelven un solo valor; resultado de la operación realizada con los anteriores operandos. Hay notación postfija y prefija, por lo que variable++ y ++variable son dos formas distintas de incrementar una variable. En primer lugar, se procesa la variable, y luego se incrementa. Sin embargo, en el segundo caso, primero se incrementa la variable y después se procesa. Estos son los operadores aritméticos más importantes:</p>
+<p align="left">* Multiplicación.</p>
+<p align="left">/ División.</p>
+<p align="left">+ Suma.</p>
+<p align="left">– Resta.</p>
+<p align="left">% Resto de una división.</p>
+<p align="left">++ Incrementa el valor de la variable.</p>
+<p align="left">-- Disminuye el valor de una variable.</p>
+<p align="left">4. Lógicos. Permiten realizar expresiones aritméticas. Es importante saber que si en la primer evaluación ya se conoce el resultado, no se evalúa la segunda expresión, es decir para el operador && si la primer expresión es falsa entonces automáticamente la evaluación es falsa y para el operador || si la primer expresión es verdadera entonces automáticamente la evaluación es verdadera.</p>
+<p align="left">&& Y</p>
+<p align="left">|| O</p>
+<p align="left">! Negación</p>
+<p align="left">Estructuras de Control. Existen estructuras que nos permiten variar el orden de ejecución dependiendo de ciertas condiciones. Estas estructuras se pueden clasificar en dos grandes grupos: bifurcaciones condicionales y bucles.</p>
+<p align="left">Una bifurcación condicional en una estructura que realiza una tarea u otra dependiendo del resultado de evaluar una condición. Estas son la sentencia if…else y la sentencia switch:</p>
+<p align="left">1.if...else. Evalúa una condición y en caso que resulte verdadera ejecuta una acción determinada y en caso contrario ejecuta otra, la sintaxis de esta sentencia es la siguiente:</p>
+<center><img src="b7.jpg"></center>
+<p align="left">2.switch. La sentencia switch toma una variable, y la evalúa según unos posibles valores: La sintaxis de esta sentencia es la siguiente:</p>
+<center><img src="">b8.jpg</center>
+<p align="left">Un bucle es una estructura que permite repetir una tarea un número de veces, determinado por una condición. Para hacer bucles se puede utilizar las estructuras while y do…while. Su sintaxis es la siguiente:</p>
+<center><img src="b9.jpg"></center>
+<p align="left">El código contenido en el bucle se ejecutará mientras la condición se cumpla. Antes de comenzar la primera iteración del bucle se ejecutará la sentencia inicio y en cada iteración se ejecutará la sentencia incremento.</p>
+<p align="left"><strong>Introducción al lenguaje del lado del servidor</strong></p>
+<p align="left">Son  útiles en trabajos que se tiene que acceder a información centralizada, situada en una base de datos en el servidor, y cuando por razones de seguridad los cálculos no se pueden realizar en la computadora del usuario.</p>
+<p align="left">Son necesarios porque para hacer la mayoría de las aplicaciones web se debe tener acceso a muchos recursos externos a la computadora del cliente, principalmente bases de datos alojadas en servidores de Internet. Un caso claro es un banco: no tiene ningún sentido que el cliente tenga acceso a toda la base de datos, sólo a la información que le concierne.</p>
+<p align="left">Las páginas dinámicas del servidor se suelen escribir en el mismo archivo HTML, mezclado con el código HTML, al igual que ocurría en las páginas del cliente.  Cuando una página es solicitada por parte de un cliente, el servidor ejecuta los scripts y se genera una página resultado, que solamente contiene código HTML. Este resultado final es el que se envía al cliente y puede ser interpretado sin lugar a errores ni incompatibilidades, puesto que sólo contiene HTML.</p>
+<p align="left">Luego es el servidor el que maneja toda la información de las bases de datos y cualquier otro recurso, como imágenes o servidores de correo y luego envía al cliente una página web con los resultados de todas las operaciones. Las ventajas de este tipo de programación son que el cliente no puede ver los scripts, ya que se ejecutan y transforman en HTML antes de enviarlos. Además, son independientes del navegador del usuario, ya que el código que reciben es HTML fácilmente interpretable.</p>
+<p align="left">Como desventajas se puede señalar que será necesario un servidor más potente y con más capacidades que el necesario para las páginas de cliente. Además, estos servidores podrán soportar menos usuarios concurrentes, porque se requerirá más tiempo de procesamiento para cada uno.</p>
+<p align="left"><strong>Elementos de programación del lado del servidor</strong</p>
+<p align="left">Existen varios lenguajes;</p>
+<p align="left">Practical Extraction and Report Language (PERL): Es el lenguaje más utilizado para la creación de programas CGI en los servidores web. Es más rápido que los programas shell script de UNIX, puede leer y escribir ficheros binarios, y puede procesar ficheros grandes. La ventaja más  importante de PERL sobre C es que PERL no necesita ser recompilado, es un lenguaje interpretado.</p>
+<p align="left">Active Server Pages (ASP): EL estándar ASP permite poder utilizar cualquier lenguaje para la programación, si bien Microsoft favorece que se utilice el VBScript, y en segundo término el JScript (versión del estándar JavaScript hecha por Microsoft). En teoría, y mediante la programación, es posible adaptar versiones de lenguajes como Pascal, C y otros, para utilizarlos dentro de páginas ASP.</p>
+<p align="left">Java Server Pages (JSP): Sirve para  generar páginas web de forma dinámica en el servidor, desarrollado por Sun Microsystems, basado en scripts que utilizan una variante del lenguaje Java. La tecnología JSP, o de JavaServer Pages, es una tecnología Java que permite a los programadores generar dinámicamente HTML, XML o algún otro tipo de página web. Esta tecnología permite al código Java y a algunas acciones predefinidas ser embebidas en el contenido estático. La principal ventaja de JSP frente a otros lenguajes es que permite integrarse con clases Java (.class) lo que permite separar en niveles las aplicaciones web, almacenando en clases java las partes que consumen más recursos, así como las que requieren más seguridad, y dejando la parte encargada de formatear el documento html en el archivo jsp. Además, Java se caracteriza por ser un lenguaje que puede ejecutarse en cualquier sistema, lo que sumado a jsp le da mucha versatilidad.</p>
+<p align="left">Hipertext Preprocesor (PHP): Es un lenguaje de programación interpretado. Se utiliza entre otras cosas para la programación de páginas web activas, y se destaca por su capacidad de mezclarse con el código HTML. Aunque su creación y desarrollo se da en el ámbito de los sistemas libres, bajo la licencia GNU, existe además un compilador comercial denominado (Zend Optimizer). El desarrollo del código abierto por un lado y el firme respaldo comercial por el otro, han elevado a PHP a alcanzar una popularidad más que notable.</p>
+<p align="left"><strong>Aplicación del lado del servidor</strong></p>
+<p align="left">El PHP está construido para generar en forma sencilla páginas web dinámicas a partir de información almacenada en bases de datos.</p>
+<p align="left">Conexión a la base:</p>
+<center><img src="b10.jpg"></center>
+<p align="left">Ejemplo:</p>
+<center><img src="b11.jpg"></center>
+<p align="left">La función realiza la conexión a la base Mysql y devuelve “false” si hubo algún error en la conexión o un link a la conexión a la base en caso de que la conexión sea exitosa. El link es un número que indica la sesión dentro del MySql. Para finalizar la conexión se debe utilizar la función mysql_close (). Es muy importante cerrar la conexión a la base de datos una vez finalizadas las transacciones para evitar la sobrecarga en el motor de la base de datos.</p>
+<p align="left">Selección de la base de datos a utilizar</p>
+<center><img src="b12.jpg"></center>
+<p align="left">Ejemplo: </p>
+<center><img src="b13.jpg"></center>
+<p align="left">Esta función configura cual es la base de datos que se utilizara por omisión. En este caso el link a utilizar en esta función es el link que se obtuvo al ejecutar la función mysql_connect. La función mysql_select_db devuelve el valor “false” en caso de que se encuentre algún error, como por ejemplo la inexistencia de la base de datos. En este punto cabe aclarar que la denominación de las bases de datos de MySql es case-sensitive, por lo que debemos mantener un standard a la hora de elegir los nombres de las distintas bases de datos.</p>
+<p align="left">Queries a la base de datos</p>
+<p align="left">Nuevamente el link que se debe usar es el que se obtiene al conectarse a la base, mysql_query devuelve falso en caso de que el query no pueda ejecutarse (error de SQL) o bien un result set en los casos que devuelva algún tipo de datos como por ejemplo en un select.</p>
+<center><img src="b14.jpg"></center>
+<p align="left">Ejemplo:</p>
+<center><img src="b15.jpg"></center>
+<p align="left">Hay que  fijarse con que usuario se realizó la conexión a la base de datos a la hora de ejecutar el mysql_connect, ya que la gran mayoría de los errores producidos en esta instancia son el resultado de la falta de permisos para realizar la consulta.</p>
+<p align="left">Cantidad de Filas Consultadas</p>
+<p align="left">Esta función devuelve la cantidad de filas que se obtuvieron luego de ejecutar una instrucción de consulta como por ejemplo la función select</p>
+<center><img src="b16.jpg"></center>
+<p align="left">Ejemplo:</p>
+<center><img src="b17.jpg"></center>
+<p align="left">En la variable $cant  dirá cuántas chicas de entre 20 y  25 años hay la lista de contactos.</p>
+<p align="left">Filas Modificadas</p>
+<p align="left">Devuelve cuantos registros fueron afectados por un query con insert, update, o delete, notar que se le pasa el db_link ya que el result_set no tiene sentido. Si el query fue un delete sin clausula “where” esta función devuelve cero independientemente del número de registros eliminados de la tabla.</p>
+<center><img src="b18.jpg"></center>
+<p align="left">Ejemplo:</p>
+<center><img src="b19.jpg"></center>
+<p align="left">Obtención de registros de una consulta en un result set</p>
+<p align="left">Toma un registro del result set y lo devuelve en un vector en el cual el elemento con índice 0 es la primera columna del registro, el elemento con índice 1 es la segunda columna, etc. Si no hay más registros por devolver devuelve false.</p>
+<center>img src="b20.jpg"></center>
+<p align="left">Ejemplo:</p>
+<center><img src="b21.jpg"></center>
+<p align="left">Los valores de los campos solicitados en el result set son devueltos en forma de array, es decir que para acceder al valor de nombre de la primera fila de nuestro ejemplo debo llamar a la variable $rs[0]. Ejemplo:</p>
+<center><img src="b22.jpg"></center>
+<p align="left">Obtención de registros de una consulta en un vector</p>
+<p align="left">Funciona de forma idéntica a mysql_fetch_row pero devuelve los resultados en un vector asociativo indexado por nombre de columna</p>
+<center><img src="b23.jpg"></center>
+<p align="left">Para obtener los nombres de una consulta es necesario llamar al vector de la forma $rs[“nombre”]. Ejemplo:</p>
+<center><img src="b24.jpg"></center>
+<p align="left">Cerrar la conexión</p>
+<p align="left">Esta función sirve para cerrar la conexión a la base de datos.</p>
+<center><img src="b25.jpg"></center>
+<center><strong>CONCLUSIONES</strong></center>
+<p align="left">Este trabajo me permitió conocer e identificar los principales conceptos de la programación web mediante la aplicación de técnicas de programación del lado del cliente y del lado del servidor para desarrollar aplicaciones web que sigan los estándares vigentes.</p>
+<p align="left">Que el lugar donde se ejecutan los scripts tiene una gran influencia en la estructura de los proyectos web. Cuantos más scripts se trasladan al ámbito de responsabilidad del navegador, más ligera es la página o la aplicación web para el servidor y, aunque esto significa una descongestión importante para el servidor, puede acarrear un peor rendimiento para el usuario. </p>
+<center><strong>BIBLIOGRAFÍA</strong></center>
+<p align="left">Guía De Sistemas Operativos Universidad Tutorial CETEC. Unidad 2.</p>
+<p align="left">https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/lenguajes-del-lado-servidor-o-del-cliente-diferencias/</p>
+<br>
+    <aside> <align="right">
+       <video src="tutorial.mp4" width="540" height="380"></video>
+     </aside> 
+
+</body>
+
+
+</html>

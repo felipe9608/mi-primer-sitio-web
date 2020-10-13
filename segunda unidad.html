@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="es">
+    <HEAD>
+         <meta charset="utf-8"/>
+         <TITLE>LENGUAJE DE MARCADO</TITLE>
+         <LINK REL="stylesheet" TYPE="text/css" HREF="estilo.css">
+         <meta name="Descripcion" content="Esta es mi primera pagina web"/>
+         <meta name="author" content="Felipe de Jesus Espinal Moreno"/>
+         <meta name="keywords" content="Programacion web"/>
+    </HEAD>
+    <body style="background-color:#a9aaac;"></body>>
+    <header>
+              <h2 align="center">Felipe De Jesus Espinal Moreno</h2>
+              <h3 align="center">UNIVERSIDAD CETEC</h3>
+              <h2 align="center">Unidad 2. LENGUAJE DE MARCADO</h1>
+              <time datetime="15-09-2020">Publicado 15-09-2020</time>
+    </header>
+    <nav>
+        <ul>
+         <li>Principal</li>
+         <li>Ayuda</li>
+         <li>Contacto</li>
+        </ul>
+    </nav>
+    <aside> <align="right">
+        <a href="tercera unidad.html">Tercera unidad</a>
+    </aside>
+
+     <h2><center>INTRODUCCIÓN</center></h2>
+
+     <p align="left">El presente resumen habla sobre el Lenguaje de Marcado y Lenguaje de
+     Presentación, sobre esto hay que ir a año 1989, el físico nuclear Tim Berners-Lee
+     del CERN (Centro europeo para la investigación nuclear) trabajaba en un sistema
+     que permitiera acceder a archivos en línea sobre el protocolo de comunicaciones
+     TCP/IP. En este año existían dos métodos para enlazar documentos electrónicos
+     entre sí. Por una parte los enlaces o hipervínculos y por otra parte un lenguaje
+     denominado SGML (Standard Generalize Markup Language, &quot;Lenguaje de marcas
+     generalizado&quot;), que consiste en un sistema para la organización y etiquetado de
+     documentos. La ISO normalizó el lenguaje en el año 1986. Sirve para especificar
+     las reglas de etiquetado y no impone ningún conjunto de etiquetas especial,
+     teniendo en cuenta estos métodos Tim Berners-Lee a principios de 1990 definió el
+     lenguaje HTML (Hypertext Markup Language, “Lenguaje de marcas hipertextuales”)
+     como un subconjunto de SGML y creó algo más el World Wide Web (también conocido 
+     como la Web, es un sistema de documentos de hipertexto y/o hipermedios enlazados 
+     entre si y accesibles desde interne). En 1991 creó el primer navegador de HTML que 
+     funcionaba en modo texto y para el sistema UNIX.</p
+
+     <p align="right"><h2>RESUMEN UNIDAD 1</h2>
+
+     <p align="left">HTML5 es un lenguaje de marcado que especifica la estructura y el contenido de
+     los documentos que se visualizan en los navegadores Web, es la versión
+     emergente de HTML. Este lenguaje permite crear contenido que se despliega de
+     manera apropiada a través de todo el extraordinario rango de dispositivos
+     conectados a Internet: Smartphones, Tabletas, computadoras tipo notebook,
+     computadoras de escritorio, dispositivos de propósito especial como pantallas
+     gigantes en auditorios de conciertos y estadios deportivos, y muchos más. Aunque
+     similares, cada versión de HTML utiliza etiquetas diferentes, y ya que en sí mismo
+     el HTML5 tiene objetivos más ambiciosos de los que pretendían cubrir versiones
+     anteriores.</p>
+     <p align="left">HTML5 tiene su XHTML es un estándar estricto basado en el HTML4 y XML, por lo que su
+     implementación es también casi universal. No es permisivo con los errores, como
+     sí lo es HTML4, lo que obliga a formar correctamente un documento HTML como
+     sucede con un documento XML. Las desventajas que presenta son las mismas
+     que HTML4.</p>
+     <p align="left">HTML5 posee una gran cantidad de funcionalidades las mejoras en el manejo de
+     multimedia son ampliamente superiores; imágenes, video, audio y fuentes de texto
+     son mucho más manipulables En muchos casos, estas mejoras se pueden tomar
+     como una respuesta directa a Flash. HTML5 proporciona una manera de hacer un
+     código más limpio, más fácil de leer y de escribir, cubriendo al mismo tiempo y de
+     mejor manera la cada vez mayor demanda de funcionalidades por parte de
+     programadores, diseñadores y usuarios.</p>
+     <p align="left">Para promover la interoperabilidad se requiere que cada aplicación especifique su
+     conjunto de caracteres del documento (W3C, 1999). Un conjunto de caracteres del
+     documento consiste en:</p>
+     <p align="left">* Un repertorio: Un conjunto de caracteres abstractos, tales como la letra latina &quot;A&quot;
+     o la letra cirílica &quot;I&quot;, el carácter chino que significa &quot;agua&quot;, etc.
+     * Posiciones de códigos: Un conjunto de referencias enteras a los caracteres del repertorio. Cada documento HTML es una secuencia de caracteres del repertorio.</p>
+     <p align="left">Los sistemas informáticos identifican cada carácter según la posición de su
+     código; por ejemplo, en el conjunto de caracteres ASCII, las posiciones de los códigos 65, 66 y 67 se refieren a los caracteres &#39;A&#39;, &#39;B&#39; y &#39;C&#39; respectivamente.
+     HTML usa un conjunto de caracteres mucho más completo llamado Conjunto Universal de Caracteres (Universal Character Set, UCS), definido en el estándar
+     ISO/IEC 10646 (ISO, 2014). Este estándar define un repertorio de miles de caracteres usados por comunidades de todo el mundo (W3C, 1999).</p>
+     <p align="left">El conjunto de caracteres definido en ISO/IEC 10646 es equivalente carácter por
+     carácter a UNICODE (UNICODE, 2016).En la especificación actual, se utiliza ISO/IEC 10646 para hacer referencia al conjunto de caracteres del documento,
+     mientras que UNICODE se reserva para hacer referencia al algoritmo de texto bidireccional de Unicode.</p>
+     <p align="left">Para permitir a los agentes de usuario interpretar correctamente los documentos
+     HTML del modo en que éstos se intercambian normalmente, se codifican como
+     una secuencia de bytes en un fichero o durante una transmisión en red. Los
+     agentes de usuario deben conocer además la codificación de caracteres
+     específica que fue usada para transformar el flujo de caracteres del documento en
+     un flujo de bytes.</p>
+     <p align="left">El parámetro "charset" identifica una codificación de caracteres, que es un método
+     para convertir una secuencia de bytes en una secuencia de caracteres que se
+     adapta naturalmente al modo de funcionamiento de la Web: los servidores envían
+     los documentos HTML a los agentes de usuario como un flujo de bytes; los agentes de usuario los 
+     interpretan como un flujo de caracteres, puede ir desde una correspondencia simple uno a uno hasta complejos algoritmos o procesos de intercambio (W3C, 1999).</p>
+     <p align="left">Las codificaciones de caracteres usadas normalmente en la Web incluyen la
+     ISO8859-1 (también llamada "Latin-1" utilizable para la mayor parte de los idiomas de Europa occidental.
+     Los administradores de páginas deben usar estos mecanismos para enviar un
+     parámetro "charset" siempre que sea posible, pero con cuidado de no identificar
+     un documento con un valor del parámetro "charset" equivocado.</p>
+     <p align="left">El tipo de codificación de caracteres a los agentes de usuario es utilizando el
+     parámetro "charset" del campo "Content-Type" de encabezado del protocolo
+     HTTP. Por ejemplo, el siguiente encabezado HTTP anuncia que la codificación de
+     caracteres es EUC-JP:</p>
+     <p align="left">Content-Type: text/html; charset=EUC-JP</p>
+     <p align="left">Los documentos HTML pueden incluir información explícita sobre la codificación
+     de caracteres del documento; Por ejemplo, para especificar que la codificación de
+     caracteres del documento actual es "EUC-JP&quot", un documento debe incluir la siguiente declaración META:</p>
+     <p align="left">"META http-equiv="Content-Type" content="text/html; charset=EUC-JP"</p>
+     <p align="left">En resumen, los agentes de usuario conformes deben tener en cuenta las
+     siguientes prioridades a la hora de determinar la codificación de caracteres de un
+     documento (de prioridad más alta a más baja):</p>
+     <p align="left">*Un parámetro "charset" HTTP en un campo "Content-Type".</p>
+     <p align="left">*Una declaración META con "http-equiv" establecido en "Content-Type" y un valor dado para "charset".</p>
+     <p>El atributo charset establecido en un elemento que designe un recurso externo.</p>
+     <h2><center>Tipos de datos básicos</center></h2>
+     <p align="left">El HTML es un ejemplo de lenguaje de formato de documentos (W3C, 1999).
+     Incluye elementos que representan párrafos, vínculos de hipertexto, listas, tablas,
+     imágenes, etc. Cada declaración de tipo de elemento describe generalmente tres partes:
+     una etiqueta inicial, un contenido y una etiqueta final. El nombre del
+     elemento aparece en la etiqueta inicial (escrita &lt;nombre-del-elemento&gt;) y en la
+     etiqueta final (escrita &lt;/nombre-del-elemento&gt;); obsérvese la barra que precede al
+     nombre del elemento en la etiqueta final. Por ejemplo, las etiquetas iniciales y final
+     del tipo de elemento ul delimitan los objetos de una lista:</p>
+
+     <center><img src="lista.png"></center>
+
+     <p align="left">El DTD de HTML indica para cada tipo de elemento si la etiqueta inicial y la
+     etiqueta final son necesarias. La definición del tipo de documento y el texto de la
+     especificación indican si un tipo de elemento es vacío (es decir, si no tiene
+     contenido) o, en caso de que pueda tener contenido, lo que se considera como
+     contenido legal. Para los nombres de los elementos no se distingue nunca entre
+     mayúsculas y minúsculas.</p>
+     <p align="left">Los elementos no son etiquetas, Recordar que el elemento es una cosa, y la
+     etiqueta (sea la inicial o la final) es otra cosa distinta (W3C, 1999).
+     Los elementos pueden tener propiedades asociadas, llamadas atributos, que
+     pueden tener valores (por defecto o asignados por el autor o por un script). Las
+     parejas atributo/valor aparecen antes del ">" final de la etiqueta inicial de un
+     elemento. En la etiqueta inicial de un elemento puede aparecer cualquier número
+     de parejas (legales) atributo/valor, separadas por espacios (W3C, 1999). Uno de
+     los lenguajes más comunes para presentar información web es HTML.orden. En
+     este ejemplo se establece el atributo id de un elemento H1:</p>
+
+     <center><img src="elemento h1.jpg"></center>
+
+     <p align="left">Por defecto, SGML requiere que todos los valores de atributo estén delimitados ya
+     sea mediante comillas dobles (ASCII decimal 34) o mediante comillas simples
+     (ASCII decimal 39). Un valor de atributo delimitado por comillas dobles puede
+     contener signos de comillas simples, y viceversa. Los autores también pueden
+     utilizar referencias numéricas de caracteres para representar comillas dobles
+     (&#34;) y simples (&#39;).</p>
+     <p align="left">El valor del atributo sólo puede contener letras (a-z y A-Z), dígitos (0-9), guiones
+     (ASCII decimal 45), puntos (ASCII decimal 46), guion bajo (ASCII decimal 95) y
+     dos puntos (ASCII decimal 58). Recomendamos usar comillas incluso cuando sea
+     posible eliminarlas. Para los nombres y valores de atributos no se distingue nunca
+     entre mayúsculas y minúsculas.</p>
+     <p align="left">Las referencias de caracteres son nombres simbólicos o numéricos de caracteres
+     que pueden incluirse en un documento HTML. Son útiles para hacer referencia a
+     caracteres usados esporádicamente, o a aquellos que son difíciles o imposibles de
+     introducir con las herramientas de creación. Las referencias de caracteres
+     comienzan con un signo "&" y terminan con un punto y coma (;) (W3C, 1999).</p>
+     <p align="left">Algunos ejemplos comunes:</p>
+     <p> "&lt" representa el signo.</p>
+     <p> "&gt" representa el signo >.</p>
+     <p> "&quot"; representa el signo”.</p>
+     <p> "&#229";(en decimal) representa la letra "a" con un pequeño círculo encima.</p>
+     <p> "&#1048"; (en decimal) representa la letra mayúscula ciríli</p>
+     <p> a "I".  "&#x6C34;" (en hexadecimal) representa el carácter chino para el agua.</p>
+     <p>Los comentarios en HTML tienen la sintaxis siguiente:</p>
+     <center><img src="comentarios.jpg"></center>
+     <p align="left">No se permite espacio en blanco entre el delimitador de apertura de declaración
+     de etiqueta ("<!") y el delimitador de apertura de comentario ("--"), pero sí se
+     permite entre el delimitador de cierre de comentario ("--") y el delimitador de cierre
+     de declaración de etiqueta (">"). Un error común es incluir una cadena de guiones
+     ("---") dentro de un comentario. Los autores deberían evitar poner dos o más
+     guiones adyacentes dentro de un comentario. La información que aparece entre
+     comentarios no tiene significado especial (por ejemplo, las referencias de
+     caracteres no se interpretan como tales). Los comentarios forman parte del código (W3C, 1999).</p>
+
+     <center><h2>Estructura global de un documento</h2></center>
+
+     <p>Un documento HTML5 se compone de tres partes:</p>
+     <p>1. Una línea que contiene la versión del HTML.</p>
+     <p>2. Una sección de cabecera declarativa.</p>
+     <p>3. Un cuerpo que incluye el contenido real del documento.</p>
+     <p>La Siguiente Figura muestra un ejemplo sencillo de un documento HTML5.</p>
+ 
+     <center><img src="ejemplo html5.jpg"></center>
+     <p align"left">HTML como estándar propuso la declaración del tipo de documento DOCTYPE.
+     Con esta etiqueta se pueden establecer hasta hoy 15 modos de estándar
+     diferentes, pero la expuesta es la más corta, amena y simple que proporciona
+     HTML5 (Standard Mode). Esta etiqueta aparece en la línea 1 del ejemplo y es
+     obligatoria en los documentos HTML5 para que los navegadores desplieguen la
+     página en modo estándar de acuerdo con las especificaciones de HTML y CSS.
+     Algunos navegadores operan en modo quirks para mantener compatibilidad hacia
+     atrás con páginas web que no están actualizadas con los estándares mas recientes. 
+     En cada documento de HTML5 que se cree, debe incluir la declaración DOCTYPE.
+     Las líneas en blanco (líneas 2 y 10) se introdujeron para facilitar la legibilidad de
+     los documentos; el navegador ignora estas líneas.</p>
+
+     <p align="left">Las líneas 3 y 4 son comentarios en HTML5. Se insertan comentarios 
+     opcionalmente para mejorar la legibilidad y describir el contenido de un
+     documento. El navegador ignora los comentarios cuando aparecen en el
+     documento. Los comentarios en HTML5 empiezan con &lt;!-- y terminan con --&gt;.
+     El marcado de HTML5 contiene elementos que representan el contenido de un
+     documento, por ejemplo, texto, imágenes, gráficos, animaciones, sonidos y videos.
+     Además, HTML5 contiene elementos que especifican la estructura y el significado
+     de un documento. Algunos elementos importantes son html, que empieza en la
+     línea 5 y termina en la línea 14; head, líneas 6 a la 9; y body, líneas 11 a la 13. El
+     elemento html encierra la sección del encabezado, representada por el elemento
+     head, y la sección del cuerpo, representada por el elemento body. La sección del
+     encabezado contiene información sobre el documento HTML5, como el conjunto
+     de caracteres que utiliza la página, línea 7; en este caso se trata de UTF-8 el cual
+     es el esquema de codificación de caracteres más popular para la Web. Además,
+     en la línea 8 aparece el elemento title, el cual es el título de la página web. La
+     sección del encabezado también puede contener instrucciones especiales de
+     formato del documento conocidas como hojas de estilo CSS3 y programas del
+     lado cliente conocidos como secuencias de comandos script para crear páginas
+     web dinámicas. La sección del cuerpo contiene el contenido de la página, que el
+     navegador muestra cuando el usuario visita la página web.
+     Los documentos de HTML5 delimitan la mayoría de los elementos con una
+     etiqueta inicial y una etiqueta final. Una etiqueta inicial consiste en el nombre del
+     elemento entre paréntesis angulares, por ejemplo &lt;html&gt; en la línea 5. Una
+     etiqueta final consiste en el nombre del elemento seguido de una barra diagonal /
+     entre paréntesis angulares, por ejemplo </html> en la línea 14. También existen
+     los elementos vacíos que no tienen etiqueta final.</p>
+
+     <p align="left">La línea 8 especifica un elemento <u>title</u>. A esto se le conoce como elemento
+     <u>anidado</u>, ya que está encerrado entre las etiquetas inicial y de final del elemento
+     head. El elemento head también es un elemento anidado, ya que está encerrado
+     entre las etiquetas de inicio y de fin del elemento html. El elemento title describe la
+     página web. Por lo general, los títulos aparecen en la barra de título en la parte
+     superior de la ventana del navegador, en la pestaña del navegador en donde se
+     visualiza la página y también como el texto que identifica a una página cuando los
+     usuarios agregan esa página a su lista de Favoritos o Marcadores, lo que les
+     permite regresar a sus sitios favoritos. Los motores de búsqueda usan title para
+     fines de indexación y a la hora de mostrar resultados. En la línea 11 comienza el
+     elemento body del documento, el cual especifica su contenido y puede incluir
+     texto, imágenes, sonidos y videos.</p>
+     <p align="left">El elemento <u>párrafo</u> que se indica mediante las etiquetas &lt;p&gt; y &lt;/p&gt; en la línea 12,
+     ayudan a definir la estructura de un documento. Todo el texto que se coloca entre las etiquetas &lt;p&gt; y &lt;/p&gt; forma un párrafo.</p>
+     <p align="left">Cuando un navegador despliega un párrafo, coloca espacio adicional por encima y
+     debajo del texto del párrafo. La línea clave en el programa es la línea 12, que
+     indica al navegador que muestre el mensaje Bienvenido a HTML5.
+     Etiquetas de fin, este documento termina con dos etiquetas de fin (líneas 13 y 14)
+     que cierran los elementos body y html, respectivamente. La etiqueta &lt;/html&gt;
+     informa al navegador que el marcado de HTML5 está completo.</p>
+         <h2><center>Elementos básicos: texto, vínculos, listas, tablas, objetos, imágenes y aplicaciones</center></h2>
+     <p align="left">El elemento que se utiliza para incluir texto en un documento HTML5 es &lt;p&gt; &lt;/p&gt;,
+     Además, se pueden utilizar encabezados cuando se tiene cierto texto más
+     importante que otro. HTML5 ofrece seis elementos de encabezado, h1 a h6, para
+     especificar la importancia relativa de la información Figura siguiente. El elemento
+     de encabezado h1 (línea 12) se considera el más significativo y por lo general se
+     despliega en una fuente más grande que los otros cinco (líneas 13 a 17). Cada
+     elemento de encabezado sucesivo (h2, h3, etc.) se despliega por lo general en
+     una fuente cada vez más pequeña.</p>
+     <center><img src="fuente.jpg"></center>
+
+     <p align="left">Una de las características más importantes de HTML5 es el hipervínculo que hace
+     referencia a otros recursos, como los documentos de HTML5 y las imágenes..
+     Cualquier elemento visualizado puede actuar como hipervínculo.</p>
+     <p align="left">En la siguiente figura se muestra la creación de hipervínculos de texto hacia
+     cuatro sitios web. El texto &amp;iacute es el código especial para acentuar letras, como
+     en la línea 8 del ejemplo.</p>
+     <center><img src="linea8.jpg"></center>
+
+     <p align="left">En la línea 13 se introduce el elemento strong, el cual indica que su contenido
+     tiene alta importancia. Por lo general, los navegadores despliegan dicho texto en
+     una fuente en negrita. Los vínculos se crean mediante el uso del elemento a
+     (ancla). En la línea 16 se define un hipervínculo hacia el URL asignado al atributo
+     href (referencia de hipertexto), el cual especifica la ubicación de un recurso tal como:</p>
+
+     <p>• Una página web o ubicación dentro de una página web</p >
+     <p>• Un archivo</p>
+     <p>• Una dirección de correo electrónico</p>
+
+     <p align="left">El elemento ancla en la línea 16 vincula el texto Facebook a una página Web
+     ubicada en http://www.facebook.com. o. Si el servidor web no puede localizar un
+     documento solicitado, devuelve una indicación de error al navegador web (lo que
+     se conoce como error 404) y éste muestra una página web que contiene un mensaje de error.</p>
+
+     <p align="left">Las anclas pueden vincular a direcciones de correo electrónico mediante el uso de
+     un URL mailto:. Cuando el usuario hace dic en este tipo de vínculo con ancla, la
+     mayoría de los navegadores inician el programa de corteo electrónico
+     predeterminado del usuario, por ejemplo, Mozilla Thunderbird, Microsoft Outlook o
+     Apple Mail) para que éste pueda escribir un mensaje de correo electrónico a la
+     dirección vinculada. La siguiente Figura muestra este tipo de ancla. Las líneas 13
+     y 14 contienen un vínculo de correo electrónico. La forma de un ancla de correo
+     electrónico es <a href ="mailto:direccionCorreo">...</a>.</p>
+     <center><img src="imagen1.jpg"></center>
+ 
+     <center><img src="imagen2.jpg"></center>
+
+     <p align="left">Las páginas web pueden contener imágenes, animaciones, gráficos, sonidos e
+     incluso videos. PNG (gráficos portables de red) y JPG (Grupo de expertos unidos
+     en fotografía). Los usuarios pueden crear imágenes mediante el uso de software
+     especializado como Photoshop, Corel Draw, etc. También es posible adquirir
+     imágenes de varios sitios web, muchos de los cuales ofrecen imágenes libres de
+     regalías. Es necesario leer los términos de servicio de cada sitio para determinar si
+     necesitará permiso para utilizar sus imágenes, en especial en aplicaciones
+     comerciales con fines de lucro.</p>
+     <p align="left">La siguiente Figura muestra cómo incluir imágenes en páginas web.</p>
+     <center><img src="imagen3.jpg"></center>
+
+     <center><img src="imagen4.jpg"></center>
+
+     <p align="left">En las líneas 13 y 14 se utiliza un elemento img para incluir una imagen en el
+     documento. La ubicación del archivo se especifica mediante el atributo src (origen,
+     source en inglés) esta imagen se encuentra en una carpeta llamada img, la cual
+     está dentro de la carpeta que contiene el documento HTML5.</p>
+
+     <p align="left">Los atributos opcionales width y height especifican las dimensiones de la imagen.
+     Es recomendable siempre incluir los atributos width y height. Y sepa cuánto
+     espacio de la pantalla debe proporcionar y pueda visualizar la página en forma
+     correcta, incluso antes de descargar la imagen. Si se incluyen estos atributos, el
+     navegador podrá cargar y desplegar las páginas con mayor rapidez.</p>
+
+     <p align="left">En ocasiones, un navegador no puede desplegar una imagen. Puede ser que el
+     navegador no soporte imágenes o que el cliente haya desactivado la visualización
+     de imágenes para reducir el tiempo de descarga. Cada elemento img en un
+     documento HTML5 debe tener un atributo alt. Si el navegador no puede desplegar
+     una imagen, debe mostrar el valor del atributo alt. El atributo alt también es
+     importante por cuestión de accesibilidad: el software sintetizador de voz puede
+     pronunciar el valor del atributo alt, de modo que un usuario con discapacidad
+     visual pueda comprender lo que le navegador está visualizando. Por esta razón, el
+     atributo alt debe describir el contenido de la imagen.</p>
+
+     <p align="left">Algunos elementos de HTML5 conocidos como elementos vacíos, solo contienen
+     atributos y no marcan texto, es decir, no se coloca texto entre una etiqueta de
+     inicio y una de fin. Aunque esto no es obligatorio en HTML5, para terminar los
+     elementos vacíos como el elemento img, podemos usar el caracter de barra
+     diagonal (/) dentro del paréntesis angular derecho de cierre (>) de la etiqueta de
+     inicio. Por ejemplo, las líneas 15 y 16 podrían escribirse así:</p>
+     <center><img src="imagen5.jpg"></center>
+
+     <p align="left">Al usar imágenes como hipervínculo se puede crear páginas web gráficas que
+     vinculen a otros recursos. La siguiente Figura muestra cinco hipervínculos de
+     imagen distintos. Al hacer clic en una imagen, el usuario será transportado a la
+     página web correspondiente.</p>
+     <center><img src="imagen6.jpg"></center>
+
+     <p align="left">En las líneas 13 a la 16 se crea un hipervínculo de imagen, para lo cual anidan un
+     elemento img en un elemento ancla. El valor del atributo src del elemento img
+     especifica la imagen inicio.jpg la cual reside en una carpeta llamada img. La
+     carpeta img y el documento HTML5 se encuentran en el mismo directorio.
+     También es posible hacer referencia a las imágenes de otros documentos web si
+     se configura el atributo scr con el nombre y la ubicación de la imagen. Si se hace
+     referencia a una imagen en otro sitio web, el navegador solicita el recurso de la
+     imagen al servidor de ese sitio. Al hacer clic en el hipervínculo de una imagen se
+     transporta a la página web especificada por el atributo href del elemento ancla <a>
+     </a>. Al colocar el mouse sobre un vínculo de cualquier tipo, aparece la URL al
+     que apunta ese vínculo en la barra de estado en la parte inferior de la ventana del navegador.</p>
+
+     <p align="left">En HTML5 puede utilizar listas para organizar el contenido de la página web. La
+     siguiente Figurar muestra texto en una lista desordenada, es decir, es una simple
+     lista con viñetas que no ordena sus elementos con números o letras. El elemento
+     de lista desordenada ul que aparece en las líneas 16 a la 22, crea una lista en
+     donde cada elemento comienza con un símbolo de viñeta. Por lo general, esta
+     viñeta es un círculo relleno. Cada entrada en una lista desordenada es un
+     elemento li en una nueva línea con un símbolo de viñeta y con sangría a partir del principio de la línea.</p>
+
+     <center><img src="imagen7.jpg"></center>
+
+     <p align="left">Las listas pueden están anidadas para representar relaciones jerárquicas, como
+     en un esquema multinivel. La siguiente Figura muestra el uso de listas anidadas y
+     las listas ordenadas. El elemento de lista ordenada ol crea una lista en la que cada
+     elemento empieza con un número.</p>
+     <center><img src="imagen8.jpg"></center>
+     <center><img src="imagen9.jpg"></center>
+
+     <p align="Left">Un navegador web aplica sangría a cada lista anidada para indicar una relación
+     jerárquica. La primera lista ordenada, de las líneas 29 a 33, incluye dos elementos.
+     Los elementos en una lista ordenada se enumeras como 1., 2., 3., etc. Las listas
+     ordenadas anidadas se enumeran de la misma forma. Por lo general, se colocan
+     viñetas cuadradas antes de los elementos subsiguientes de las listas
+     desordenadas anidadas. Los estilos de las viñetas pueden variar según el navegador.</p>
+
+     <p align="left">Las tablas se usan con frecuencia para organizar datos en filas y columnas. La
+     siguiente Figura muestra un ejemplo de una tabla con seis filas y dos columnas
+     que muestra la información de precios de varias frutas. Las tablas se definen
+     mediante el elemento table como se puede ver en las líneas 13 a la 58. La línea
+     13 especifica la etiqueta de inicio del elemento table. El atributo border con el valor
+     de 1 especifica que el navegador debe colocar bordes alrededor de la tabla y
+     alrededor de sus celdas. Éste es un atributo de herencia que se debe evitar. Se
+     recomienda darles formato a las tablas mediante CSS.</p>
+
+     <center><img src="imagen10.jpg"></center>
+
+     <center><img src="imagen11.jpg"</center>
+
+     <p align="left">El elemento caption, el cual aparece en las líneas 17 y 18, especifica el título de
+     una tabla. En este elemento el texto se despliega por encima de la tabla. Además,
+     es una buena práctica incluir una descripción general de la información de la tabla
+     con el atributo summary del elemento table, la cual es una de las muchas
+     características de HTML5 que hacen a las páginas web más accesibles para los
+     usuarios con discapacidades. Los dispositivos de voz usan este atributo para que
+     la tabla sea más accesible a los usuarios con discapacidad visual.</p>
+
+     <p align="left">Una tabla tiene tres secciones distintas: encabezado, cuerpo y pie. La sección de
+     encabezado (o celda de encabezado) se define mediante un elemento thead, el
+     cual aparece en las líneas 22 a la 27 y contiene información sobre el encabezado
+     como los nombres de las columnas. Cada elemento tr de las líneas 23 a la 26,
+     define una sola fila de la tabla. Las columnas en la sección thead se definen con
+     elementos th. La mayoría de los navegadores centran el texto con formato de los
+     elementos th (columna de encabezado de la tabla) y lo muestran en negrita. Los
+     elementos de encabezado de la tabla (líneas 24 y 25) están anidados dentro de
+     los elementos de fila de la tabla.</p>
+     <p align="left">La sección del cuerpo, o cuerpo de la tabla, contiene los datos primarios de ésta.
+     El cuerpo de la tabla (líneas 40 a la 57) se definen en un elemento tbody. En el
+     cuerpo de la tabla, cada elemento tr especifica una fila. Las celdas de datos
+     contienen piezas individuales de datos y se definen con elementos td (datos de tabla) en cada fila.</p>
+ 
+     <p align="left">La sección tfoot de las líneas 31 a la 36, se define con un elemento tfoot (pie de la
+     tabla). Por lo común, el texto que se coloca en el pie incluye resultados de cálculos
+     y notas al pie. Al igual que otras secciones, la sección tfoot puede contener filas de
+     tabla y cada fila puede contener celdas. Como en la sección thead, las celdas en
+     la sección del pie se crean mediante el uso de elementos th en vez de los
+     elementos td que se usan en el cuerpo de la tabla, en HTML5, la sección tfoot
+     puede estar encima o debajo de la sección tbody en el código..</p>
+
+     <h2><center>Estructura y disposición</center></h2>
+
+     <p align="left">La estructura del cuerpo, es decir, el código que se encuentra entre las etiquetas
+      &lt;body&gt;, generará la parte visible del documento. Este es el código que producirá
+     nuestra página web.</p> 
+
+     <p align="left">HTML5 incorpora nuevos elementos que ayudan a identificar cada sección del
+     documento y organizar el cuerpo del mismo; hacer más descriptivas nuestras
+     páginas y permitir con esto que el contenido en ellas sea identificado, clasificado,
+     interpretado y manejado de forma más precisa por navegadores, lectores,
+     indexadores, etcétera. En HTML5 las secciones más importantes son
+     diferenciadas y la estructura principal ya no depende más de los elementos &lt;div&gt;
+     o &lt;table&gt;. Cómo usamos estos nuevos elementos depende de nosotros, pero las
+     palabras clave otorgadas a cada uno de ellos nos dan ayudan a entender sus funciones.</p>
+     <p align="left">Organización. La siguiente Figura muestra un diseño común encontrado en la
+     mayoría de los sitios webs estos días. A pesar del hecho de que cada diseñador
+     crea sus propios diseños, en general podremos identificar las siguientes secciones
+     en cada sitio web estudiado:</p>
+     <center><img src="imagen12.jpg"></center>
+
+     <p align="left">El contenido más relevante de una página web se encuentra, en casi todo diseño,
+     ubicado en su centro. Esta sección presenta información y enlaces valiosos. La
+     mayoría de las veces es dividida en varias filas y columnas. En el ejemplo anterior
+     ¡Error! No se encuentra el origen de la referencia. Se utilizaron solo dos columnas:
+     Información Principal y Barra Lateral, pero esta sección es extremadamente
+     flexible y normalmente diseñadores la adaptan acorde a sus necesidades
+     insertando más columnas, dividiendo cada columna entre bloques más pequeños
+     o generando diferentes distribuciones y combinaciones. El contenido presentado
+     en esta parte del diseño es usualmente de alta prioridad. En el diseño de ejemplo,
+     Información Principal podría contener una lista de artículos, descripción de
+     productos, entradas de un blog o cualquier otra información importante, y la Barra
+     Lateral podría mostrar una lista de enlaces apuntando hacia cada uno se esos
+     ítems. En un blog, por ejemplo, esta última columna ofrecerá una lista de enlaces
+     apuntando a cada entrada del blog, información acerca del autor, etc.</p>
+
+     <p align="left">En la base de un diseño web clásico siempre nos encontramos con una barra más
+     que aquí llamamos Institucional. La nombramos de esta manera porque esta es el
+     área en donde normalmente se muestra información acerca del sitio web, el autor
+     o la empresa, además de algunos enlaces con respecto a reglas, términos y
+     condiciones y toda información adicional que el desarrollador considere importante
+     compartir. La barra Institucional es un complemento de la Cabecera y es parte de
+     lo que se considera estos días la estructura esencial de una página web, como lo muestra la Figura:</p>
+
+     <center><img src="imagen13.jpg"></center>
+
+     <p align="left">En este ejemplo se puede claramente identificar cada parte del diseño
+     considerado anteriormente.</p>
+     <p align="left">1. Cabecera</p>
+     <p align="left">2. Barra de Navegación</p>
+     <p align="left">3. Sección de Información Principal</p>
+     <p align="left">4. Barra Lateral</p>
+     <p align="left">5. El pie o la barra Institucional</p>
+
+     <p align="left">HTML5 considera esta estructura básica y provee nuevos elementos para
+     diferenciar y declarar cada una de sus partes. A partir de ahora podemos decir al
+     navegador para qué es cada sección.</p>
+
+     <center><img src="imagen14.jpg"</center>
+
+     <p align="left">La Figura anterior muestra el típico diseño presentado anteriormente, pero esta
+     vez con los correspondientes elementos HTML5 para cada sección, incluyendo
+     etiquetas de apertura y cierre.</p>
+
+         <center><h2>Elementos estructurales</h2></center>
+
+     <p align="left">En muchos años se ha utilizado &lt;div&gt; y class para definir (casi por regla general)
+     un header, un footer, navs y otras entidades muy comunes en el desarrollo de
+     cualquier sitio web. Finalmente llegó el momento de incorporar formalmente a
+     todas esas entidades como parte del lenguaje y actualmente son parte de la nueva
+     especificación de HTML5.</p>
+
+     <p align="Left">La etiqueta con cierre <u>&lt;article&gt;</u> es como una página pequeña dentro de una
+     página. Debe usarse para definir contenido autónomo e independiente,
+     proveniente de una fuente externa de información y predecible de ser reutilizada de modo aislado.</p>
+
+     <center><img src="imagen15.jpg"></center>
+
+     <p align="left">Cuando se desea colocar información en un fragmento de la página que está
+     relacionado con el contenido principal, pero debe estar separado de él, se utiliza la
+     etiqueta con cierre &lt;aside&gt;. Comúnmente a &lt;aside&gt; se le ubica como una barra
+     lateral. Se debe tener en cuenta que, si desea colocar una barra lateral porque el
+     diseño visual lo indica, no significa necesariamente que deba utilizar &lt;aside&gt;.
+     Unas preguntas simples que puede utilizar para determinar si es conveniente usar
+     o no son: ¿Si elimino el contenido dentro de &lt;aside&gt; , el contenido principal se ve
+     reducido?, ¿el contenido que pienso colocar en &lt;aside&gt;  tiene que ver con
+     información respecto a la estructura o autoría de la página? Si la respuesta es
+     negativa en ambas preguntas, entonces puede usar el elemento &lt;aside&gt;. Como
+     advertencia, varios navegadores soportan la etiqueta, pero no se han puesto de
+     acuerdo en cómo presentarla.</p>
+
+     <center><img src="imagen16.jpg"></center>
+ 
+     <p align"left">La etiqueta &lt;footer&gt;  se utiliza para representar el pie de página (en contexto de
+     una página web). Se posiciona por supuesto en la parte inferior de la página,
+     usualmente se utiliza este elemento para colocar información de derechos de autor, información de contacto
+     o créditos. Para las personas que tienen experiencia en el desarrollo de páginas web, tendrá sentido enterarse que
+     &lt;footer&gt; sustituye al habitual &lt;div id="footer"&gt; &lt;/div&gt; , tan utilizado en versiones anteriores de HTML.</p>
+
+     <center><img src="imagen17.jpg"</center>
+
+     <p align="left">El elemento con cierre &lt;header&gt;  se utiliza como tope o cabecera visible de una
+     página. No confunda &lt;header&gt;  con la etiqueta &lt;head&gt;  que contiene el título y los
+     metadatos de nuestras páginas. En &lt;header&gt;  usualmente se tienen etiquetas de
+     encabezado &lt;h1&gt; ; a &lt;h6&gt;  o alguna etiqueta &lt;img&gt; . La etiqueta &lt;header&gt;  no está
+     limitada a cabecera de una página, también puede usarse dentro de una etiqueta
+     &lt;article&gt;  y &lt;section&gt;  para indicar cabeceras dentro de éstas, si usted coloca un
+     &lt;h1&gt;  en el encabezado principal sólo de ese artículo o sección. Este elemento
+     está pensado para sustituir al uso común de &lt;div id="header"&gt; &lt;/div&gt; .</p>
+
+     <center><img src="imagen18.jpg"></center>
+
+     <p align="left">La etiqueta &lt;nav&gt;  junto con su cierre es utilizada para contener información sobre
+     la navegación del sitio web que se construyó. Este elemento usualmente utiliza
+     enlaces con la etiqueta &lt;a&gt; , pero éstos deben de ser enlaces sólo para la
+     navegación principal del sitio y no para enlaces externos. El elemento &lt;nav&gt; ha
+     sido creado buscando sustituir a &lt;div id="nav"&gt; &lt;/div&gt; .</p>
+
+     <p align="left">El nuevo elemento con cierre &lt;section&gt;  intenta albergar contenido específico
+     sobre algún tema, es muy similar a usar la etiqueta &lt;div&gt; , pero &lt;div&gt;  no tiene un
+     significado semántico y no informa sobre el tipo de contenido alojado en la
+     etiqueta. El elemento &lt;section&gt;  se usa de forma explícita para agrupar contenido relacionado.
+     Considere la pregunta ¿está todo el contenido incluido relacionado entre sí?, si la
+     respuesta es positiva entonces puede utilizar &lt;section&gt; .</p> 
+     <center><img src="imagen19.PNG"></center>
+
+     <p align="left">Hasta el momento el soporte para &lt;section&gt;  por parte de los navegadores es
+     reducido. Los elementos &lt;div&gt;  y &lt;article&gt;  pueden ser buenos sustitutos.
+     Elementos media, es la característica más esperada de HTML5 y probablemente
+     la más divertida desde el punto de vista de desarrollo y aún más para el usuario.
+     Ahora HTML5 soporta la inserción de audio y video sin necesidad de ningún
+     componente externo e incluye también soporte para gráficas vectoriales a través
+     del elemento &lt;canvas&gt;  y SVG.</p>
+
+     <p align="left">El elemento &lt;audio&gt;  y su cierre nos permite tener audio embebido en nuestras
+     páginas. Cualquier texto entre las etiquetas &lt;audio&gt; y &lt;/audio&gt; será desplegado
+     en cualquier navegador que no soporte el elemento de audio, opcionalmente
+     también puede colocar en lugar de texto un enlace para descargar el archivo de
+     audio o embeber un reproductor Flash. El elemento &lt;audio&gt; cuenta con los atributos siguientes:</p>
+
+     <p align="left">• Atributo autoplay. Indica si el archivo de audio debería ser automáticamente
+     reproducido o no.
+     • Atributo controls. Especifica si los controles de reproducción deberían ser o no
+     desplegados.
+     • Atributo loop. Establece si la reproducción del audio debería ser reiniciada cada
+     vez que llega al final.
+     • Atributo preload. Especifica si el audio debería ser cargado cuando la página
+     comienza a cargar.
+     • Atributo src. Indica la dirección URL del archivo de audio a reproducir. A pesar
+     de la existencia de este atributo es mejor utilizarlo en la etiqueta vacía &lt;source&gt;,
+     ya que ésta nos permite colocar varias alternativas del origen del audio.</p>
+
+     <p align="left">Aunque &lt;audio&gt; ya es soportado por los principales navegadores, los fabricantes
+     aún no están completamente de acuerdo con el formato de audio que debería ser
+     utilizado, y por lo tanto soportan diferntes formatos que se debaten
+     principalmente entre el estándar libre Ogg y Mp3.</p>
+
+     <center><img src="imagen20.jpg"></center>
+
+     <p align="left">La etiqueta con cierre &lt;canvas&gt; (lienzo) es quizá el elemento que puede arrojar
+     resultados más llamativos para el usuario. Cuando utiliza &lt;canvas&gt; el navegador
+     reserva una parte de la ventana para el uso de gráficos, los cuales serán
+     dibujados justo ahí. El elemento en sí es fácil de implementar en términos de
+     HTML, pero su verdadera manipulación se hace totalmente por medio del uso de JavaScript.</p>
+     <center><img src="imagen21.jpg"></center>
+
+     <p align="left">Cualquier cosa que escriba entre &lt;canvas&gt;  y &lt;/canvas&gt; solamente será
+     interpretado por navegadores que no soportan aún la nueva etiqueta. Ahora que
+     se adicionó un &lt;canvas&gt; también se incluirá un botón para llamar a una función
+     JavaScript llamada dibuja () cuando se hace clic en él.</p>
+     <center><img src="imagen22.jpg"></center>
+
+     <p align="left">La función JavaScript dibuja () es la que en realidad hará algo interesante. Primero
+     debe referenciar el elemento &lt;canvas&gt; para adquirir su contexto (la interfaz de
+     programación de aplicación o API).</p>
+
+     <center><img src="imagen23.jpg"></center>
+
+     <p align="left">La siguiente Figura muestra el resultado que despliega el navegador.</p>
+     <center><img src="imagen24.jpg"></center>
+
+     <p align="left">La etiqueta vacía &lt;embed&gt; es la etiqueta general para embeber cualquier tipo de
+     media en una página. Utiliza el atributo “type” para especificar el tipo de contenido
+     que vamos a embeber auxiliándose del tipo MIME del contenido. Tome en cuenta
+     que en la práctica no importa que utilice la etiqueta &lt;embed&gt; con todos sus
+     atributos de manera correcta, si el cliente no cuenta con el plugin apropiado, su
+     contenido no será desplegado. Utilice esta etiqueta preferentemente sólo como
+     método de respaldo a etiquetas más confiables como &lt;audio&gt;  y &lt;video&gt; . Por otro
+     lado, si desea utilizar contenido Flash en el contexto de HTML5, &lt;embed&gt; es la
+     mejor manera de incluir este tipo de contenido.</p>
+
+     <center>><img src="imagen25.jpg"></center> 
+
+     <p align="left">La etiqueta con cierre &lt;svg&gt; es otra opción disponible en HTML5 que permite
+     construir gráficos vectoriales en nuestra página. Utiliza una estructura XML, es
+     decir, también utiliza etiquetas, pero éstas son propias de &lt;svg&gt; y no se pueden
+     utilizar fuera del ámbito de éste; estas etiquetas propias tienen atributos para
+     permitir posición y apariencia, pero se puede utilizar JavaScript y CSS sin ningún
+     problema. La característica más popular de &lt;svg&gt; es que permite escalar
+     imágenes sin perder calidad El siguiente código dibuja un cuadrado:</p>
+
+     <center><img src="imagen26.jpg"></center>
+
+     <p align="left">Este código mostraría un cuadro en el navegador como muestra la Figura:</p>
+
+     <center><img src="imagen27.jpg"></center>
+
+     <p align="left"></p>La etiqueta con cierre &lt;video&gt;  es otro elemento que ha causado gran expectativa
+     y ha estado involucrado en una interesante polémica (animada por el cofundador
+     de Apple, Steve Jobs). Cuando vemos un video en un reproductor, normalmente lo
+      que vemos son las imágenes (cuadros) del video y su respectivo audio, pero no
+     usamos dos archivos separados para cada uno, si no que en su lugar solamente
+     tenemos un solo archivo, quizá en formato Mp4, AVI o MOV entre otros. Pero
+     estos son sólo formatos contenedores, simplemente definen cómo almacenar la
+     información de video y audio en un solo archivo Cuando se utiliza un video,
+     reproductor hace básicamente 3 cosas:</p>
+
+     <p align="left">1. Determina qué formato contenedor se está utilizando para entonces encontrar
+     qué video y audio están disponibles dentro y proceder a determinar cuál es la
+     “herramienta” correcta para decodificar la información, a esta herramienta se le
+     conoce como codec.</p>
+     <p align="left">2. Procede a decodificar (usando un codec) la información de video para presentar
+     la secuencia de imágenes (o cuadros) que lo componen en pantalla.</p>
+     <p align="left">3. Procede a decodificar (usando un codec) la información de audio para enviarla
+     sus bocinas.</p>
+
+     <p align="left">Qué codec de audio y video deberían ser usados, debido a que las compañías
+     dueñas de los navegadores tienen diferentes posturas acerca de cuál debería ser
+     el formato soportado para desplegar video, y esto a veces trae problema con la
+     relación navegadores, tipos MIME y servidores Web . Sin embargo, se puede
+     hablar de los principales contendientes hasta el momento:</p>
+
+      <p align="left">• Mp4 (Codec de Video: H.264, Codec de Audio: AAC): Los tres formatos son
+     propietarios y por lo tanto tienen restricciones de patente.</p>
+     <p align="left">• Ogg (Codec de Video: Theora, Codec de Audio: Vorbis): Éste es un formato y
+     sus codecs son completamente libres.</p>
+     <p align="left">• WebM (Codec de Video: VP8, Codec de Audio: Vorbis): Éste es un formato más
+     nuevo, y sus codecs son de código abierto. VP8 fue un formato propietario hasta
+     que Google compró a la compañía dueña y liberó el codec.</p>
+
+     <p align="left">La etiqueta &lt;video&gt; trabaja de manera muy similar a la etiqueta &lt;audio&gt;. Si va a
+     utilizar &lt;video&gt;  utilice la etiqueta &lt;source&gt; para proporcionar diferentes
+     alternativas al archivo origen de video y como respaldo le sugiero que utilice
+     &lt;embed&gt; para un reproductor Flash. Cualquier texto entre las etiquetas &lt;video&gt; y
+     &lt;/video&gt; será desplegado en cualquier navegador que no soporte el elemento.</p> 
+
+     <p align="left">Desde siempre HTML ha ofrecido formularios que necesitan otras tecnologías de
+     páginas de servidor como ASP, JSP, PHP, etc. Y JavaScript. Sin embargo, es
+     importante saber cómo trabaja cada elemento de los formularios. La siguiente
+     muestra un formulario con controles clásicos.</p>
+
+     <p align="left">La estructura general del formulario utiliza las siguientes etiquetas:
+     Etiqueta con cierre &lt;form&gt;  contiene a todo el formulario.
+     Todos los elementos que formen parte de un formulario deben ser colocados
+     dentro de las etiquetas &lt;form&gt;...&lt;/form&gt;. Esta etiqueta puede utilizar varios
+     atributos, pero los más utilizados son action, que indica adónde enviar los datos
+     del formulario para que sean procesados, este proceso normalmente se auxilia de
+     páginas activas de servidor; y el otro atributo comúnmente usado es method que
+     especifica la manera en que se enviarán los datos en el protocolo HTTP.</p> 
+
+     <p align="left">Etiqueta con cierre &lt;fieldset&gt;. Es usada para agrupar juntos una serie de
+     elementos de un formulario. No es una etiqueta requerida en la estructura de
+     formulario, pero es útil para organizar mejor los elementos visualmente. Por
+     default dibuja una línea de contorno alrededor del grupo. o Etiqueta con cierre
+     &lt;legend&gt;. Coloca un texto que sirve de leyenda para el fieldset. o Etiqueta con
+     cierre &lt;label&gt;. Es una etiqueta se utiliza para colocar texto referente a un
+     elemento de formulario, pero en realidad no hace nada notable sin su atributo for.
+     Si se utiliza el atributo for (el cual debe ser igual al id de un elemento de
+     formulario) entonces el &lt;label&gt; queda amarrado con dicho elemento, de manera
+     que si el usuario hace clic sobre el texto dentro de &lt;label&gt; el foco lo obtendrá el
+     elemento de formulario referido en el atributo for.</p>
+
+     <p align="left">Campo de texto, muchos de los controles de formulario están basados en el uso
+     de la etiqueta &lt;input&gt;. Esta etiqueta usa el atributo Type para señalar qué tipo de
+     elemento debe colocar en la página. El tipo de control para obtener datos del
+     usuario más utilizado es sin duda el campo de texto simple.
+     El proceso para agregar un control de etiqueta &lt;input&gt; es simple:</p>
+
+     <p align="left">1. Se coloca la etiqueta vacía &lt;input&gt;.</p>
+     <p align="left">2. Escriba el atributo type con su respectivo valor, en este caso text.</p>
+     <p align="left">3. Añada el atributo id, el cual permite colocar un identificador al control, esto es
+     de suma importancia, ya que posibilita distinguir este control de cualquier otro, por
+     lo tanto, no se debe repetir el valor de este atributo en ningún otro control.
+     JavaScript y CSS se auxilian de este valor constantemente.</p>
+     <p align="left">4. Opcionalmente puede agregar valor por default utilizando el atributo value.
+     Cualquier texto colocado en este atributo será el valor por default para el elemento
+     en el formulario.</p>
+
+     <p align="left">Después de seguir estos pasos el campo de texto simple aparecerá en el
+     navegador. El código del control es el siguiente:</P>
+
+     <p align="left">Hay momento en donde se requiere de varias líneas de texto para escribir un dato
+     largo, dado que el campo de texto simple es para información breve, el control
+     área de texto se vuelve muy conveniente. Éste no es un control de tipo &lt;input&gt; por
+     lo que la sintaxis es algo diferente, ya que se usa la etiqueta con cierre &lt;textarea&gt;
+     Para hacer un área de texto:</p>
+     <p align="left">1. Escribir las etiquetas &lt;textarea&gt; y su cierre &lt;/textarea&gt;.</p>
+     <p align="left">2. Especificar el número de líneas que desea que el área de texto pueda contener.
+     Si agrega más líneas el área de texto será más grande.</p>
+     <p align=left>3. Indicar el número de columnas que convenga. La cantidad de columnas es
+     medida en caracteres.</p>
+     <p align="left">El código de este elemento en la Figura siguiente:</p>
+
+     <p align="left">En muchos formularios es común requerir datos personales que no es conveniente
+     que estén a la vista de cualquiera, como, por ejemplo, contraseña entre otros, para
+     ello se debe crear un campo que no muestre los datos que se escriben en él. Para
+     lograr esto se utiliza la etiqueta &lt;input&gt; con el atributo type con valor password. El
+     código de este elemento en la ¡Error! No se encuentra el origen de la referencia.</p>
+
+     <p align="left">Usar este tipo de control oculta visualmente su valor, pero por sí mismo no
+     encripta, ni oculta su valor al enviar la información. Por lo que una persona hábil
+     puede obtener esta información si usted no se auxilia de técnicas y tecnologías de
+     seguridad más avanzadas.</p>
+
+     <p align="left">Las listas de selección simple como combobox son muy comunes y de gran ayuda
+     para los formularios en los que se requiera saber un dato preciso y excluyente de
+     otros, de manera que se limite a opciones planteadas previamente por nosotros.
+     Este tipo de elemento implícitamente nos ofrece la ventaja de poder evitar errores
+     de escritura por parte del usuario y predecir exactamente los posibles valores que
+     podemos obtener.</p>
+
+     <p align="left">Las listas de selección u opciones se obtienen gracias a la etiqueta &lt;select&gt; y a su
+     cierre, las opciones que contienen cada lista de selección simple se escriben
+     utilizando la etiqueta con cierre &lt;option&gt;.</p>
+     <p align="left">Los pasos para crear este control en una página son:</p>
+     <p align="left">1. Colocar las etiquetas contenedoras de la lista &lt;select&gt; y &lt;/select&gt;.</p>
+     <p align="left">2. Asignar un identificador único a la lista con el atributo id.</p>
+     <p align="left">3. Escribir dentro del ámbito de &lt;select&gt; una etiqueta &lt;option&gt; con su cierre para
+     cada opción de su lista.</p>
+     <p align="left">4. Dar a cada &lt;option&gt; un valor, que será el valor enviado por el usuario después
+     de seleccionar y enviar la información. Para esto escriba el atributo value y asigne
+     el valor deseado.</p>
+     <p align="left">5. Colocar el texto que el usuario verá por cada opción. Sólo coloque el texto entre
+     la etiqueta de inicio &lt;option&gt; y la de cierre &lt;option&gt;.</p>
+     <p align="left">El código de este elemento en la figura, ¡Error! No se encuentra el origen de la
+     referencia. Es el siguiente:</p>
+
+     <p align="left">Es posible que en lugar de tener una lista de selección simple donde sólo se
+     puede ver una opción a la vez, si se desea ver más de una opción a la vez, se
+     seguirán los mismos pasos que se utilizan para la lista de selección múltiple,
+     únicamente se agregará el atributo size a la etiqueta &lt;select&gt; y se le asignará un
+     valor numérico correspondiente a la cantidad de opciones que desea ver al mismo
+     tiempo. Visualmente lo que se obtendrá es que en lugar de un menú desplegable
+     aparecerá simplemente una caja con las opciones y un scroll lateral si la cantidad
+     de opciones lo amerita. El código de este elemento en la ¡Error! No se encuentra
+      el origen de la referencia. Es el siguiente:</p>
+
+      <p align="left">Lista de selección múltiple (listbox multiple selection)
+     Si desea seleccionar más de una opción al mismo tiempo, sólo agregue otros
+     pasos a las listas de selección anteriores (combobox y listbox. Únicamente se
+     requiere colocar el atributo multiple a la etiqueta &lt;select&gt; sin ningún otro valor. El
+     código de este elemento en la Figura siguiente:</p>
+
+     <p align="left">Otro tipo de lista para la etiqueta &lt;input&gt; son las listas de botones radio. Esto es,
+     cómo tener respuestas de selección múltiple, en donde sólo una respuesta es la
+     correcta, por lo tanto, este tipo de control siempre va en grupos de 2 o más
+     miembros en la lista y por lo menos un elemento siempre debe estar seleccionado.</p>
+     <p align="left">Los pasos generales para crear este tipo de lista son:</p>
+     <p align="left">1. Iniciar escribiendo la etiqueta &lt;input&gt;.</p>
+     <p align="left">2. Asignar al atributo type el valor de radio.</p>
+     <p align="left">3. Repetir los pasos 1 y 2 tantas veces como opciones en la lista de botones
+     deseados y dar un valor al atributo id único.</p>
+     <p align=left>4. Colocar a todos los botones (etiquetas &lt;input&gt;) que se hayan creado, el mismo
+     valor para el atributo name (esto los hará botones miembros de la misma lista).</p>
+     <p align="left">5. Especificar el valor a cada miembro de la lista usando el atributo value igual al
+     valor deseado (value="suvalor").</p>
+     <p align="left">6. Ordenar su código de manera que visualmente sea evidente que todos los
+     botones son miembros de la misma lista.</p>
+     <p align="left">7. Seleccionar el botón radio, el cual estará seleccionado por default, para lograr
+     esto agregue el atributo checked con el valor checked (checked="checked").</p>
+     <p align="left">8. Asignar una &lt;label&gt; asociada con el atributo for a la opción correspondiente con
+     un texto descriptivo en cada botón para ayudar al usuario a distinguir entre sus opciones.</p>
+     <p align="left">El código de este elemento en la Figura siguiente:</p>
+
+     <center><img src="imagen28.jpg"</center>
+
+     <p align"left">Recordar que la etiqueta &lt;label&gt; comparte el foco con el &lt;input&gt; asociado para
+     facilitar el clic al usuario. Lista de cajas (checkboxes). Se encontrará casos en
+     donde cierta información requiere una respuesta positiva o falsa. El control
+     apropiado para enfrentar esta situación son las cajas de selección, en donde el
+     usuario marcará o demarcará con un clic en la caja correspondiente a la opción.</p>
+
+     <p align="left">Las cajas de selección a menudo forman grupos para aparecer en listas, pero
+     actúan independientemente una de otra, de manera que se puede dar el caso de
+     una caja solitaria. Pasos para construir lista de cajas:</p>
+     <p align="left">Iniciar escribiendo la etiqueta &lt;input&gt;.</p>
+     <p align="left">1. Dar al atributo type el valor de “checkbox”.</p>
+     <P align="left">2. Repetir los pasos 1 y 2 tantas veces como opciones en la lista de botones
+     desee y dé un valor al atributo “id” único.</p>
+     <p align="left">3. Especificar el valor a cada miembro de la lista usando el atributo value igual al
+     valor deseado (value="suvalor").</p>
+     <p align="left">4. Asignar una &lt;label&gt; asociada con el atributo for a la opción correspondiente con
+     un texto descriptivo en cada botón para ayudar al usuario a distinguir entre sus opciones.</p>
+     <p align="left">El código de este elemento en la Figura siguiente:</p>
+
+     <center><img src="imagen29.jpg"></center>
+
+     <p align="left">El botón para enviar información o submit, normalmente se utiliza para enviar La
+     información coleccionada por todos los campos del formulario al lado del servidor.
+     Alguna tecnología de servidor como ASP o PHP entre otras procesa esta
+     información. Este control es otro valor del atributo type igualado a submit de la
+     versátil etiqueta &lt;input&gt;, el texto para el atributo “value” funciona como leyenda
+     dentro del botón. El código de este elemento en la Figura siguiente:</p>
+
+     <center><img src="imagen30.jpg"></center>
+
+     <p align="left"> Botón para borrar información del formulario es un botón muy sencillo, cuando el
+     usuario hace clic en él, todos los campos del formulario borran su valor actual y
+     regresan a su estado original. Trabaja con la etiqueta &lt;input&gt; con el valor de type
+     igual a reset, el texto para el atributo value funciona como leyenda dentro del
+     botón. El código de este elemento en la Figura siguiente:</p>
+
+     <center><img src="imagen31.jpg"></center>
+
+     <p align="left">El botón simple tiene el mismo aspecto que los dos anteriores y tiene la función de
+     trabajar del lado cliente, a diferencia del botón para enviar información que envía
+     información al servidor. Usualmente este botón trabaja con JavaScript para
+     disparar alguna acción, el texto para el atributo value funciona como leyenda
+     dentro del botón. El código de este elemento en la ¡Error! No se encuentra el
+     origen de la referencia. Es el siguiente:</p>
+
+     <center><img src="imagen32.jpg"></center>
+
+     <p align="left">El código anterior muestra la forma tradicional de hacer un botón simple, pero
+     existe una forma alternativa que tiene más sentido, ya que el botón simple no
+     captura información como sugeriría el uso de &lt;input&gt;, sino que simplemente
+     ejecuta una acción que el usuario convoca. Esta nueva forma es:</p>
+
+     <center><img src="imagen33.jpg"><center>
+
+     <p align="left">Por el momento no hay restricción de cuál manera debe usar, aunque cuando
+     utilice CSS es muy probable que prefiera la segunda opción.</p>
+
+     <p align=left">Imagen (botón). Este tipo de botón trabaja de la misma manera que el botón
+     simple. Sin embargo, la diferencia radica en que, en lugar de trabajar con la
+     apariencia por default del botón simple, utiliza en su lugar una imagen indicada. El
+     atributo type en &lt;submit&gt; contiene el valor image, se utiliza el atriburo src que
+     indicará la ruta donde se encuentra la imagen que desee usar y el atributo alt para
+     un texto alternativo. Así es como se usa:</p>
+
+     <center><img src="imagen34.jpg"></center>
+
+
+     <p align="left">La versátil etiqueta &lt;input&gt; permite crear botones como se ha hecho en el
+     formulario de ejemplo y como se ha explicado. Esta forma es la manera tradicional
+     de hacer botones en HTML y es válida en HTML5, pero también existe una nueva
+     manera de hacer el mismo tipo de botones. Los botones no son un campo donde
+     se coloque información, es decir, no son un dato de entrada como lo serían el
+     resto de los tipos &lt;input&gt;. Es por eso que existe la etiqueta con cierre &lt;button&gt; La
+     manera de usarla es muy intuitiva. Para sustituir nuestro botón simple escribir el
+     código de la siguiente manera:</p>
+
+     <p align="left">El campo oculto es una etiqueta &lt;input&gt; con el valor de type igual a hidden.
+     Gracias a este atributo se envía al programa de gestión de datos, además de los
+     datos enviados por el usuario, datos predefinidos por nosotros mismos, invisibles
+     para el usuario. Estos datos pueden ser útiles para ayudar al programa servidor en
+     la gestión de los datos enviados por el formulario.</p>
+     <h2><center>CONCLUSIONES</center></h2>
+
+     <p align="left">En este trabajo conocí e identifique los fundamentos del lenguaje de marcado
+     HTML5 mediante la aplicación de sus elementos para desarrollar aplicaciones web
+     que siguen los estándares vigentes.</p>
+     <p align="left">Un lenguaje de marcado o lenguaje de marcas es una forma de codificar un
+     documento que, junto con el texto, incorpora etiquetas o marcas que contienen
+     información adicional acerca de la estructura del texto o su presentación.
+     Que el lenguaje de marcas más extendido es el HTML &quot;HyperText Markup
+     Language&quot; (Lenguaje de marcado de hipertexto), fundamento del World Wide Web.</p>
+     <p align="left">Que los lenguajes de marcado suelen confundirse con lenguajes de programación.
+     Sin embargo, no son lo mismo, ya que el lenguaje de marcado no tiene funciones
+     aritméticas o variables, como sí poseen los lenguajes de programación.</p>
+     <p align="left">Es un sistema que permite incluir anotaciones, llamadas marcas o etiquetas, en un
+     texto. Las finalidades de esto pueden ser varias. Por ejemplo, indicar como se va a
+     presentar el texto cuando se visualice en un navegador web.
+     Es importante mencionar que fue lo más resumido posible, la mayor parte es
+     información importante.</p>
+
+     <h2><center>BIBLIOGRAFÍA</center></h2>
+
+     <p align="left">Ingeniería en Sistemas Computacionales.</p>
+     <p align="left">Guía De Sistemas Operativos Universidad Tutorial CETEC. Unidad 2.</p>
+    
+     <center><footer>
+        Derechos Reservados 2020-2021
+    </footer></center>
+
+</body>
+
+
+
+
+</HTML><
